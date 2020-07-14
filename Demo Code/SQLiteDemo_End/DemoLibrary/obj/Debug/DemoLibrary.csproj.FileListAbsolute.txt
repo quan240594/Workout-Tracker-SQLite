@@ -1,0 +1,12 @@
+C:\GitHub\Workout-Tracker-SQLite\Demo Code\SQLiteDemo_End\DemoLibrary\bin\Debug\DemoLibrary.dll
+C:\GitHub\Workout-Tracker-SQLite\Demo Code\SQLiteDemo_End\DemoLibrary\bin\Debug\DemoLibrary.pdb
+C:\GitHub\Workout-Tracker-SQLite\Demo Code\SQLiteDemo_End\DemoLibrary\bin\Debug\Dapper.dll
+C:\GitHub\Workout-Tracker-SQLite\Demo Code\SQLiteDemo_End\DemoLibrary\bin\Debug\System.Data.SQLite.dll
+C:\GitHub\Workout-Tracker-SQLite\Demo Code\SQLiteDemo_End\DemoLibrary\bin\Debug\Dapper.xml
+C:\GitHub\Workout-Tracker-SQLite\Demo Code\SQLiteDemo_End\DemoLibrary\bin\Debug\System.Data.SQLite.xml
+C:\GitHub\Workout-Tracker-SQLite\Demo Code\SQLiteDemo_End\DemoLibrary\bin\Debug\System.Data.SQLite.dll.config
+C:\GitHub\Workout-Tracker-SQLite\Demo Code\SQLiteDemo_End\DemoLibrary\obj\Debug\DemoLibrary.csprojAssemblyReference.cache
+C:\GitHub\Workout-Tracker-SQLite\Demo Code\SQLiteDemo_End\DemoLibrary\obj\Debug\DemoLibrary.csproj.CoreCompileInputs.cache
+C:\GitHub\Workout-Tracker-SQLite\Demo Code\SQLiteDemo_End\DemoLibrary\obj\Debug\DemoLibrary.csproj.CopyComplete
+C:\GitHub\Workout-Tracker-SQLite\Demo Code\SQLiteDemo_End\DemoLibrary\obj\Debug\DemoLibrary.dll
+C:\GitHub\Workout-Tracker-SQLite\Demo Code\SQLiteDemo_End\DemoLibrary\obj\Debug\DemoLibrary.pdb

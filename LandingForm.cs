@@ -125,5 +125,34 @@ namespace Workout_Tracker_SQLite
             txt_PID.Text = cb_Person_Name.SelectedValue.ToString();
         }
         #endregion
+
+        private void btn_Save_Click(object sender, EventArgs e)
+        {
+            Daily_Progress d = new Daily_Progress();
+            //Map the values to the data model of Daily Progress
+            d.Average_Reps = Convert.ToDouble(txt_Avg_Reps.Text);
+            d.Average_Weight = Convert.ToDouble(txt_Avg_Weight.Text);
+            d.Date = dateTimePicker1.Value;
+            d.Exercise_ID = Int32.Parse(cb_Workout_Name.SelectedValue.ToString());
+            d.Person_ID = Int32.Parse(cb_Person_Name.SelectedValue.ToString());
+
+            d.S1_Reps = Int32.Parse(txt_S1_Reps.Text);
+            d.S2_Reps = Int32.Parse(txt_S2_Reps.Text);
+            d.S3_Reps = Int32.Parse(txt_S3_Reps.Text);
+            d.S4_Reps = Int32.Parse(txt_S4_Reps.Text);
+            d.S5_Reps = Int32.Parse(txt_S5_Reps.Text);
+            d.S6_Reps = Int32.Parse(txt_S6_Reps.Text);
+            d.S7_Reps = Int32.Parse(txt_S7_Reps.Text);
+            d.S8_Reps = Int32.Parse(txt_S8_Reps.Text);
+
+            d.S1_Weight = Convert.ToDouble(txt_S1_Weight.Text);
+            d.S2_Weight = Convert.ToDouble(txt_S2_Weight.Text);
+            d.S3_Weight = Convert.ToDouble(txt_S3_Weight.Text);
+            d.S4_Weight = Convert.ToDouble(txt_S4_Weight.Text);
+            d.S5_Weight = Convert.ToDouble(txt_S5_Weight.Text);
+            d.S6_Weight = Convert.ToDouble(txt_S6_Weight.Text);
+            d.S7_Weight = Convert.ToDouble(txt_S7_Weight.Text);
+            d.S8_Weight = Convert.ToDouble(txt_S8_Weight.Text);
+        }
     }
 }

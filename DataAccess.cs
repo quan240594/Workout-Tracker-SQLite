@@ -33,6 +33,9 @@ namespace Workout_Tracker_SQLite
             if (cn.State != System.Data.ConnectionState.Closed) { cn.Close(); }
         }
 
+
+        //Save Data by mapping input vs an instance of this class, which is a data model. 
+        //Input is behind the @sign and will be mapped with the UI in the form
         public static void SaveData(Daily_Progress daily)
         {
             using (IDbConnection cn = new SQLiteConnection(DataAccess.ConString("Default")))

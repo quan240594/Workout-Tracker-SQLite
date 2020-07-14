@@ -24,14 +24,14 @@ namespace Workout_Tracker_SQLite
         public int S6_Reps { get; set; }
         public int S7_Reps { get; set; }
         public int S8_Reps { get; set; }
-        public int S1_Weight { get; set; }
-        public int S2_Weight { get; set; }
-        public int S3_Weight { get; set; }
-        public int S4_Weight { get; set; }
-        public int S5_Weight { get; set; }
-        public int S6_Weight { get; set; }
-        public int S7_Weight { get; set; }
-        public int S8_Weight { get; set; }
+        public double S1_Weight { get; set; }
+        public double S2_Weight { get; set; }
+        public double S3_Weight { get; set; }
+        public double S4_Weight { get; set; }
+        public double S5_Weight { get; set; }
+        public double S6_Weight { get; set; }
+        public double S7_Weight { get; set; }
+        public double S8_Weight { get; set; }
 
     }
 }

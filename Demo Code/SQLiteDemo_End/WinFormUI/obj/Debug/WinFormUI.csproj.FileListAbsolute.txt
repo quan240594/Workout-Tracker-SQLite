@@ -17,3 +17,22 @@ C:\GitHub\Workout-Tracker-SQLite\Demo Code\SQLiteDemo_End\WinFormUI\obj\Debug\Wi
 C:\GitHub\Workout-Tracker-SQLite\Demo Code\SQLiteDemo_End\WinFormUI\obj\Debug\WinFormUI.csproj.CopyComplete
 C:\GitHub\Workout-Tracker-SQLite\Demo Code\SQLiteDemo_End\WinFormUI\obj\Debug\WinFormUI.exe
 C:\GitHub\Workout-Tracker-SQLite\Demo Code\SQLiteDemo_End\WinFormUI\obj\Debug\WinFormUI.pdb
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\Demo Code\SQLiteDemo_End\WinFormUI\bin\Debug\DemoDB.db
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\Demo Code\SQLiteDemo_End\WinFormUI\bin\Debug\WinFormUI.exe.config
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\Demo Code\SQLiteDemo_End\WinFormUI\bin\Debug\WinFormUI.exe
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\Demo Code\SQLiteDemo_End\WinFormUI\bin\Debug\WinFormUI.pdb
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\Demo Code\SQLiteDemo_End\WinFormUI\bin\Debug\DemoLibrary.dll
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\Demo Code\SQLiteDemo_End\WinFormUI\bin\Debug\System.Data.SQLite.dll
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\Demo Code\SQLiteDemo_End\WinFormUI\bin\Debug\Dapper.dll
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\Demo Code\SQLiteDemo_End\WinFormUI\bin\Debug\DemoLibrary.pdb
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\Demo Code\SQLiteDemo_End\WinFormUI\bin\Debug\System.Data.SQLite.xml
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\Demo Code\SQLiteDemo_End\WinFormUI\bin\Debug\System.Data.SQLite.dll.config
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\Demo Code\SQLiteDemo_End\WinFormUI\bin\Debug\Dapper.xml
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\Demo Code\SQLiteDemo_End\WinFormUI\obj\Debug\WinFormUI.csprojAssemblyReference.cache
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\Demo Code\SQLiteDemo_End\WinFormUI\obj\Debug\WinFormUI.PeopleForm.resources
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\Demo Code\SQLiteDemo_End\WinFormUI\obj\Debug\WinFormUI.Properties.Resources.resources
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\Demo Code\SQLiteDemo_End\WinFormUI\obj\Debug\WinFormUI.csproj.GenerateResource.cache
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\Demo Code\SQLiteDemo_End\WinFormUI\obj\Debug\WinFormUI.csproj.CoreCompileInputs.cache
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\Demo Code\SQLiteDemo_End\WinFormUI\obj\Debug\WinFormUI.csproj.CopyComplete
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\Demo Code\SQLiteDemo_End\WinFormUI\obj\Debug\WinFormUI.exe
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\Demo Code\SQLiteDemo_End\WinFormUI\obj\Debug\WinFormUI.pdb

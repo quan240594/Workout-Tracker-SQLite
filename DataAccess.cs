@@ -7,6 +7,7 @@ using System.Data.SQLite;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Workout_Tracker_SQLite
 {
@@ -40,12 +41,16 @@ namespace Workout_Tracker_SQLite
         {
             using (IDbConnection cn = new SQLiteConnection(DataAccess.ConString("Default")))
             {
-                cn.Execute("INSERT INTO [DAILY PROGRESS] (Date, Exercise_ID, Person ID, Total_Sets, Total_Reps, Average_Reps, Average_Weight, " +
-                    "S1_Reps, S2_Reps, S3_Reps, S4_Reps, S5_Reps, S6_Reps, S7_Reps, S8_Reps, " +
-                    "S1_Weight, S2_Weight, S3_Weight, S4_Weight, S5_Weight, S6_Weight, S7_Weight, S8_Weight)" +
-                    "VALUES (@Date, @Exercise_ID,@Person_ID,@Total_Sets,@Total_Reps,@Average_Reps,@Average_Weight," +
-                    "@S1_Reps,@S2_Reps,@S3_Reps,@S4_Reps,@S5_Reps,@S6_Reps,@S7_Reps,@S8_Reps," +
-                    "@S1_Weight,@S2_Weight,@S3_Weight,@S4_Weight,@S5_Weight,@S6_Weight,@S7_Weight,@S8_Weight)", daily);
+                try
+                {
+                    cn.Execute("INSERT INTO [DAILY PROGRESS] (Date, Exercise_ID, Person_ID, Total_Sets, Total_Reps, Average_Reps, Average_Weight, " +
+                        "S1_Reps, S2_Reps, S3_Reps, S4_Reps, S5_Reps, S6_Reps, S7_Reps, S8_Reps, " +
+                        "S1_Weight, S2_Weight, S3_Weight, S4_Weight, S5_Weight, S6_Weight, S7_Weight, S8_Weight) " +
+                        "VALUES (@Date, @Exercise_ID, @Person_ID, @Total_Sets, @Total_Reps, @Average_Reps, @Average_Weight, " +
+                        "@S1_Reps, @S2_Reps, @S3_Reps, @S4_Reps, @S5_Reps, @S6_Reps, @S7_Reps, @S8_Reps, " +
+                        "@S1_Weight, @S2_Weight, @S3_Weight, @S4_Weight, @S5_Weight, @S6_Weight, @S7_Weight, @S8_Weight)", daily);
+                }
+                catch (Exception E) { MessageBox.Show(E.Message); }
             }
         }
     }

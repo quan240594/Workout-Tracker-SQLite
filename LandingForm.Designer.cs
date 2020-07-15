@@ -50,6 +50,9 @@
             this.chk_All_Workouts = new System.Windows.Forms.CheckBox();
             this.txt_S1_Reps = new System.Windows.Forms.TextBox();
             this.groupBox_Reps = new System.Windows.Forms.GroupBox();
+            this.btn_Reps_Clone_3to4 = new System.Windows.Forms.Button();
+            this.btn_Reps_Clone_2to3 = new System.Windows.Forms.Button();
+            this.btn_Reps_Clone_1to2 = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.txt_S8_Reps = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -94,9 +97,19 @@
             this.txt_Constate = new System.Windows.Forms.TextBox();
             this.txt_PID = new System.Windows.Forms.TextBox();
             this.btn_PID = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.btn_Refresh = new System.Windows.Forms.ToolStripButton();
+            this.btn_Reps_Clone_4to5 = new System.Windows.Forms.Button();
+            this.btn_Reps_Clone_5to6 = new System.Windows.Forms.Button();
+            this.btn_Reps_Clone_6to7 = new System.Windows.Forms.Button();
+            this.btn_Reps_Clone_7to8 = new System.Windows.Forms.Button();
+            this.btn_Weight_Clone_7to8 = new System.Windows.Forms.Button();
+            this.btn_Weight_Clone_6to7 = new System.Windows.Forms.Button();
+            this.btn_Weight_Clone_5to6 = new System.Windows.Forms.Button();
+            this.btn_Weight_Clone_4to5 = new System.Windows.Forms.Button();
+            this.btn_Weight_Clone_3to4 = new System.Windows.Forms.Button();
+            this.btn_Weight_Clone_2to3 = new System.Windows.Forms.Button();
+            this.btn_Weight_Clone_1to2 = new System.Windows.Forms.Button();
             this.toolStrip1.SuspendLayout();
             this.groupBox_Reps.SuspendLayout();
             this.groupBox_Weight.SuspendLayout();
@@ -104,6 +117,7 @@
             // 
             // toolStrip1
             // 
+            this.toolStrip1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(25, 25);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btn_Save,
@@ -116,7 +130,9 @@
             this.toolStripSeparator6,
             this.btn_Workout_Details,
             this.toolStripSeparator7,
-            this.toolStripButton1});
+            this.toolStripButton1,
+            this.toolStripSeparator1,
+            this.btn_Refresh});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(1401, 32);
@@ -223,6 +239,7 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(349, 30);
             this.dateTimePicker1.TabIndex = 3;
+            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // cb_Person_Name
             // 
@@ -231,6 +248,9 @@
             this.cb_Person_Name.Name = "cb_Person_Name";
             this.cb_Person_Name.Size = new System.Drawing.Size(349, 33);
             this.cb_Person_Name.TabIndex = 4;
+            this.cb_Person_Name.SelectedIndexChanged += new System.EventHandler(this.cb_Person_Name_SelectionChangeCommitted);
+            this.cb_Person_Name.SelectionChangeCommitted += new System.EventHandler(this.cb_Person_Name_SelectionChangeCommitted);
+            this.cb_Person_Name.SelectedValueChanged += new System.EventHandler(this.cb_Person_Name_SelectionChangeCommitted);
             // 
             // label2
             // 
@@ -257,6 +277,7 @@
             this.cb_Workout_Name.Name = "cb_Workout_Name";
             this.cb_Workout_Name.Size = new System.Drawing.Size(349, 33);
             this.cb_Workout_Name.TabIndex = 7;
+            this.cb_Workout_Name.DropDownClosed += new System.EventHandler(this.cb_Workout_Name_SelectionChangeCommitted);
             // 
             // chk_All_Workouts
             // 
@@ -276,13 +297,20 @@
             this.txt_S1_Reps.Size = new System.Drawing.Size(110, 30);
             this.txt_S1_Reps.TabIndex = 9;
             this.txt_S1_Reps.Text = "0";
+            this.txt_S1_Reps.Click += new System.EventHandler(this.txt_S1_Reps_Click);
+            this.txt_S1_Reps.TextChanged += new System.EventHandler(this.txt_S1_Reps_TextChanged);
             // 
             // groupBox_Reps
             // 
+            this.groupBox_Reps.AutoSize = true;
             this.groupBox_Reps.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.groupBox_Reps.Controls.Add(this.button4);
-            this.groupBox_Reps.Controls.Add(this.button3);
-            this.groupBox_Reps.Controls.Add(this.button2);
+            this.groupBox_Reps.Controls.Add(this.btn_Reps_Clone_7to8);
+            this.groupBox_Reps.Controls.Add(this.btn_Reps_Clone_6to7);
+            this.groupBox_Reps.Controls.Add(this.btn_Reps_Clone_5to6);
+            this.groupBox_Reps.Controls.Add(this.btn_Reps_Clone_4to5);
+            this.groupBox_Reps.Controls.Add(this.btn_Reps_Clone_3to4);
+            this.groupBox_Reps.Controls.Add(this.btn_Reps_Clone_2to3);
+            this.groupBox_Reps.Controls.Add(this.btn_Reps_Clone_1to2);
             this.groupBox_Reps.Controls.Add(this.label12);
             this.groupBox_Reps.Controls.Add(this.txt_S8_Reps);
             this.groupBox_Reps.Controls.Add(this.label11);
@@ -300,11 +328,51 @@
             this.groupBox_Reps.Controls.Add(this.label4);
             this.groupBox_Reps.Controls.Add(this.txt_S1_Reps);
             this.groupBox_Reps.Location = new System.Drawing.Point(555, 36);
+            this.groupBox_Reps.Margin = new System.Windows.Forms.Padding(10);
             this.groupBox_Reps.Name = "groupBox_Reps";
-            this.groupBox_Reps.Size = new System.Drawing.Size(313, 344);
+            this.groupBox_Reps.Size = new System.Drawing.Size(227, 369);
             this.groupBox_Reps.TabIndex = 10;
             this.groupBox_Reps.TabStop = false;
             this.groupBox_Reps.Text = "Reps";
+            // 
+            // btn_Reps_Clone_3to4
+            // 
+            this.btn_Reps_Clone_3to4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_Reps_Clone_3to4.Image = ((System.Drawing.Image)(resources.GetObject("btn_Reps_Clone_3to4.Image")));
+            this.btn_Reps_Clone_3to4.Location = new System.Drawing.Point(184, 125);
+            this.btn_Reps_Clone_3to4.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_Reps_Clone_3to4.Name = "btn_Reps_Clone_3to4";
+            this.btn_Reps_Clone_3to4.Size = new System.Drawing.Size(40, 40);
+            this.btn_Reps_Clone_3to4.TabIndex = 26;
+            this.btn_Reps_Clone_3to4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btn_Reps_Clone_3to4.UseVisualStyleBackColor = true;
+            this.btn_Reps_Clone_3to4.Click += new System.EventHandler(this.btn_Reps_Clone_3to4_Click);
+            // 
+            // btn_Reps_Clone_2to3
+            // 
+            this.btn_Reps_Clone_2to3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_Reps_Clone_2to3.Image = ((System.Drawing.Image)(resources.GetObject("btn_Reps_Clone_2to3.Image")));
+            this.btn_Reps_Clone_2to3.Location = new System.Drawing.Point(184, 85);
+            this.btn_Reps_Clone_2to3.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_Reps_Clone_2to3.Name = "btn_Reps_Clone_2to3";
+            this.btn_Reps_Clone_2to3.Size = new System.Drawing.Size(40, 40);
+            this.btn_Reps_Clone_2to3.TabIndex = 25;
+            this.btn_Reps_Clone_2to3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btn_Reps_Clone_2to3.UseVisualStyleBackColor = true;
+            this.btn_Reps_Clone_2to3.Click += new System.EventHandler(this.btn_Reps_Clone_2to3_Click);
+            // 
+            // btn_Reps_Clone_1to2
+            // 
+            this.btn_Reps_Clone_1to2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_Reps_Clone_1to2.Image = ((System.Drawing.Image)(resources.GetObject("btn_Reps_Clone_1to2.Image")));
+            this.btn_Reps_Clone_1to2.Location = new System.Drawing.Point(184, 45);
+            this.btn_Reps_Clone_1to2.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_Reps_Clone_1to2.Name = "btn_Reps_Clone_1to2";
+            this.btn_Reps_Clone_1to2.Size = new System.Drawing.Size(40, 40);
+            this.btn_Reps_Clone_1to2.TabIndex = 24;
+            this.btn_Reps_Clone_1to2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btn_Reps_Clone_1to2.UseVisualStyleBackColor = true;
+            this.btn_Reps_Clone_1to2.Click += new System.EventHandler(this.btn_Reps_Clone_1to2_Click);
             // 
             // label12
             // 
@@ -322,6 +390,8 @@
             this.txt_S8_Reps.Size = new System.Drawing.Size(110, 30);
             this.txt_S8_Reps.TabIndex = 23;
             this.txt_S8_Reps.Text = "0";
+            this.txt_S8_Reps.Click += new System.EventHandler(this.txt_S8_Reps_Click);
+            this.txt_S8_Reps.TextChanged += new System.EventHandler(this.txt_S8_Reps_TextChanged);
             // 
             // label11
             // 
@@ -339,6 +409,8 @@
             this.txt_S7_Reps.Size = new System.Drawing.Size(110, 30);
             this.txt_S7_Reps.TabIndex = 21;
             this.txt_S7_Reps.Text = "0";
+            this.txt_S7_Reps.Click += new System.EventHandler(this.txt_S7_Reps_Click);
+            this.txt_S7_Reps.TextChanged += new System.EventHandler(this.txt_S7_Reps_TextChanged);
             // 
             // label10
             // 
@@ -356,6 +428,8 @@
             this.txt_S6_Reps.Size = new System.Drawing.Size(110, 30);
             this.txt_S6_Reps.TabIndex = 19;
             this.txt_S6_Reps.Text = "0";
+            this.txt_S6_Reps.Click += new System.EventHandler(this.txt_S6_Reps_Click);
+            this.txt_S6_Reps.TextChanged += new System.EventHandler(this.txt_S6_Reps_TextChanged);
             // 
             // label9
             // 
@@ -373,6 +447,8 @@
             this.txt_S5_Reps.Size = new System.Drawing.Size(110, 30);
             this.txt_S5_Reps.TabIndex = 17;
             this.txt_S5_Reps.Text = "0";
+            this.txt_S5_Reps.Click += new System.EventHandler(this.txt_S5_Reps_Click);
+            this.txt_S5_Reps.TextChanged += new System.EventHandler(this.txt_S5_Reps_TextChanged);
             // 
             // label8
             // 
@@ -390,6 +466,8 @@
             this.txt_S4_Reps.Size = new System.Drawing.Size(110, 30);
             this.txt_S4_Reps.TabIndex = 15;
             this.txt_S4_Reps.Text = "0";
+            this.txt_S4_Reps.Click += new System.EventHandler(this.txt_S4_Reps_Click);
+            this.txt_S4_Reps.TextChanged += new System.EventHandler(this.txt_S4_Reps_TextChanged);
             // 
             // label7
             // 
@@ -407,6 +485,8 @@
             this.txt_S3_Reps.Size = new System.Drawing.Size(110, 30);
             this.txt_S3_Reps.TabIndex = 13;
             this.txt_S3_Reps.Text = "0";
+            this.txt_S3_Reps.Click += new System.EventHandler(this.txt_S3_Reps_Click);
+            this.txt_S3_Reps.TextChanged += new System.EventHandler(this.txt_S3_Reps_TextChanged);
             // 
             // label6
             // 
@@ -424,6 +504,8 @@
             this.txt_S2_Reps.Size = new System.Drawing.Size(110, 30);
             this.txt_S2_Reps.TabIndex = 11;
             this.txt_S2_Reps.Text = "0";
+            this.txt_S2_Reps.Click += new System.EventHandler(this.txt_S2_Reps_Click);
+            this.txt_S2_Reps.TextChanged += new System.EventHandler(this.txt_S2_Reps_TextChanged);
             // 
             // label4
             // 
@@ -437,13 +519,19 @@
             // groupBox_Weight
             // 
             this.groupBox_Weight.AutoSize = true;
-            this.groupBox_Weight.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.groupBox_Weight.Controls.Add(this.btn_Weight_Clone_7to8);
             this.groupBox_Weight.Controls.Add(this.label5);
+            this.groupBox_Weight.Controls.Add(this.btn_Weight_Clone_6to7);
             this.groupBox_Weight.Controls.Add(this.txt_S8_Weight);
+            this.groupBox_Weight.Controls.Add(this.btn_Weight_Clone_5to6);
             this.groupBox_Weight.Controls.Add(this.label13);
+            this.groupBox_Weight.Controls.Add(this.btn_Weight_Clone_4to5);
             this.groupBox_Weight.Controls.Add(this.txt_S7_Weight);
+            this.groupBox_Weight.Controls.Add(this.btn_Weight_Clone_3to4);
             this.groupBox_Weight.Controls.Add(this.label14);
+            this.groupBox_Weight.Controls.Add(this.btn_Weight_Clone_2to3);
             this.groupBox_Weight.Controls.Add(this.txt_S6_Weight);
+            this.groupBox_Weight.Controls.Add(this.btn_Weight_Clone_1to2);
             this.groupBox_Weight.Controls.Add(this.label15);
             this.groupBox_Weight.Controls.Add(this.txt_S5_Weight);
             this.groupBox_Weight.Controls.Add(this.label16);
@@ -454,9 +542,10 @@
             this.groupBox_Weight.Controls.Add(this.txt_S2_Weight);
             this.groupBox_Weight.Controls.Add(this.label19);
             this.groupBox_Weight.Controls.Add(this.txt_S1_Weight);
-            this.groupBox_Weight.Location = new System.Drawing.Point(892, 36);
+            this.groupBox_Weight.Location = new System.Drawing.Point(802, 36);
+            this.groupBox_Weight.Margin = new System.Windows.Forms.Padding(10);
             this.groupBox_Weight.Name = "groupBox_Weight";
-            this.groupBox_Weight.Size = new System.Drawing.Size(193, 369);
+            this.groupBox_Weight.Size = new System.Drawing.Size(233, 369);
             this.groupBox_Weight.TabIndex = 11;
             this.groupBox_Weight.TabStop = false;
             this.groupBox_Weight.Text = "Weight";
@@ -477,6 +566,8 @@
             this.txt_S8_Weight.Size = new System.Drawing.Size(110, 30);
             this.txt_S8_Weight.TabIndex = 39;
             this.txt_S8_Weight.Text = "0";
+            this.txt_S8_Weight.Click += new System.EventHandler(this.txt_S8_Weight_Click);
+            this.txt_S8_Weight.TextChanged += new System.EventHandler(this.txt_S8_Weight_TextChanged);
             // 
             // label13
             // 
@@ -494,6 +585,8 @@
             this.txt_S7_Weight.Size = new System.Drawing.Size(110, 30);
             this.txt_S7_Weight.TabIndex = 37;
             this.txt_S7_Weight.Text = "0";
+            this.txt_S7_Weight.Click += new System.EventHandler(this.txt_S7_Weight_Click);
+            this.txt_S7_Weight.TextChanged += new System.EventHandler(this.txt_S7_Weight_TextChanged);
             // 
             // label14
             // 
@@ -511,6 +604,8 @@
             this.txt_S6_Weight.Size = new System.Drawing.Size(110, 30);
             this.txt_S6_Weight.TabIndex = 35;
             this.txt_S6_Weight.Text = "0";
+            this.txt_S6_Weight.Click += new System.EventHandler(this.txt_S6_Weight_Click);
+            this.txt_S6_Weight.TextChanged += new System.EventHandler(this.txt_S6_Weight_TextChanged);
             // 
             // label15
             // 
@@ -528,6 +623,8 @@
             this.txt_S5_Weight.Size = new System.Drawing.Size(110, 30);
             this.txt_S5_Weight.TabIndex = 33;
             this.txt_S5_Weight.Text = "0";
+            this.txt_S5_Weight.Click += new System.EventHandler(this.txt_S5_Weight_Click);
+            this.txt_S5_Weight.TextChanged += new System.EventHandler(this.txt_S5_Weight_TextChanged);
             // 
             // label16
             // 
@@ -545,6 +642,8 @@
             this.txt_S4_Weight.Size = new System.Drawing.Size(110, 30);
             this.txt_S4_Weight.TabIndex = 31;
             this.txt_S4_Weight.Text = "0";
+            this.txt_S4_Weight.Click += new System.EventHandler(this.txt_S4_Weight_Click);
+            this.txt_S4_Weight.TextChanged += new System.EventHandler(this.txt_S4_Weight_TextChanged);
             // 
             // label17
             // 
@@ -562,6 +661,8 @@
             this.txt_S3_Weight.Size = new System.Drawing.Size(110, 30);
             this.txt_S3_Weight.TabIndex = 29;
             this.txt_S3_Weight.Text = "0";
+            this.txt_S3_Weight.Click += new System.EventHandler(this.txt_S3_Weight_Click);
+            this.txt_S3_Weight.TextChanged += new System.EventHandler(this.txt_S3_Weight_TextChanged);
             // 
             // label18
             // 
@@ -579,6 +680,8 @@
             this.txt_S2_Weight.Size = new System.Drawing.Size(110, 30);
             this.txt_S2_Weight.TabIndex = 27;
             this.txt_S2_Weight.Text = "0";
+            this.txt_S2_Weight.Click += new System.EventHandler(this.txt_S2_Weight_Click);
+            this.txt_S2_Weight.TextChanged += new System.EventHandler(this.txt_S2_Weight_TextChanged);
             // 
             // label19
             // 
@@ -596,6 +699,8 @@
             this.txt_S1_Weight.Size = new System.Drawing.Size(110, 30);
             this.txt_S1_Weight.TabIndex = 25;
             this.txt_S1_Weight.Text = "0";
+            this.txt_S1_Weight.Click += new System.EventHandler(this.txt_S1_Weight_Click);
+            this.txt_S1_Weight.TextChanged += new System.EventHandler(this.txt_S1_Weight_TextChanged);
             // 
             // txt_Total_Sets
             // 
@@ -669,7 +774,7 @@
             // 
             this.button1.AutoSize = true;
             this.button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button1.Location = new System.Drawing.Point(360, 221);
+            this.button1.Location = new System.Drawing.Point(365, 217);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(173, 35);
             this.button1.TabIndex = 21;
@@ -679,24 +784,24 @@
             // 
             // txt_Constate
             // 
-            this.txt_Constate.Location = new System.Drawing.Point(412, 262);
+            this.txt_Constate.Location = new System.Drawing.Point(413, 258);
             this.txt_Constate.Name = "txt_Constate";
             this.txt_Constate.Size = new System.Drawing.Size(125, 30);
             this.txt_Constate.TabIndex = 22;
             // 
             // txt_PID
             // 
-            this.txt_PID.Location = new System.Drawing.Point(189, 358);
+            this.txt_PID.Location = new System.Drawing.Point(491, 294);
             this.txt_PID.Name = "txt_PID";
             this.txt_PID.ReadOnly = true;
-            this.txt_PID.Size = new System.Drawing.Size(109, 30);
+            this.txt_PID.Size = new System.Drawing.Size(47, 30);
             this.txt_PID.TabIndex = 23;
             // 
             // btn_PID
             // 
             this.btn_PID.AutoSize = true;
             this.btn_PID.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.btn_PID.Location = new System.Drawing.Point(370, 364);
+            this.btn_PID.Location = new System.Drawing.Point(365, 289);
             this.btn_PID.Name = "btn_PID";
             this.btn_PID.Size = new System.Drawing.Size(108, 35);
             this.btn_PID.TabIndex = 24;
@@ -704,41 +809,163 @@
             this.btn_PID.UseVisualStyleBackColor = true;
             this.btn_PID.Click += new System.EventHandler(this.btn_PID_Click);
             // 
-            // button2
+            // toolStripSeparator1
             // 
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(184, 45);
-            this.button2.Margin = new System.Windows.Forms.Padding(0);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(40, 40);
-            this.button2.TabIndex = 24;
-            this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button2.UseVisualStyleBackColor = true;
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 32);
             // 
-            // button3
+            // btn_Refresh
             // 
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(184, 85);
-            this.button3.Margin = new System.Windows.Forms.Padding(0);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(40, 40);
-            this.button3.TabIndex = 25;
-            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button3.UseVisualStyleBackColor = true;
+            this.btn_Refresh.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btn_Refresh.Image = ((System.Drawing.Image)(resources.GetObject("btn_Refresh.Image")));
+            this.btn_Refresh.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_Refresh.Name = "btn_Refresh";
+            this.btn_Refresh.Size = new System.Drawing.Size(29, 29);
+            this.btn_Refresh.Text = "Refresh";
+            this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
             // 
-            // button4
+            // btn_Reps_Clone_4to5
             // 
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(184, 125);
-            this.button4.Margin = new System.Windows.Forms.Padding(0);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(40, 40);
-            this.button4.TabIndex = 26;
-            this.button4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.button4.UseVisualStyleBackColor = true;
+            this.btn_Reps_Clone_4to5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_Reps_Clone_4to5.Image = ((System.Drawing.Image)(resources.GetObject("btn_Reps_Clone_4to5.Image")));
+            this.btn_Reps_Clone_4to5.Location = new System.Drawing.Point(184, 165);
+            this.btn_Reps_Clone_4to5.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_Reps_Clone_4to5.Name = "btn_Reps_Clone_4to5";
+            this.btn_Reps_Clone_4to5.Size = new System.Drawing.Size(40, 40);
+            this.btn_Reps_Clone_4to5.TabIndex = 27;
+            this.btn_Reps_Clone_4to5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btn_Reps_Clone_4to5.UseVisualStyleBackColor = true;
+            this.btn_Reps_Clone_4to5.Click += new System.EventHandler(this.btn_Reps_Clone_4to5_Click);
+            // 
+            // btn_Reps_Clone_5to6
+            // 
+            this.btn_Reps_Clone_5to6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_Reps_Clone_5to6.Image = ((System.Drawing.Image)(resources.GetObject("btn_Reps_Clone_5to6.Image")));
+            this.btn_Reps_Clone_5to6.Location = new System.Drawing.Point(184, 205);
+            this.btn_Reps_Clone_5to6.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_Reps_Clone_5to6.Name = "btn_Reps_Clone_5to6";
+            this.btn_Reps_Clone_5to6.Size = new System.Drawing.Size(40, 40);
+            this.btn_Reps_Clone_5to6.TabIndex = 28;
+            this.btn_Reps_Clone_5to6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btn_Reps_Clone_5to6.UseVisualStyleBackColor = true;
+            this.btn_Reps_Clone_5to6.Click += new System.EventHandler(this.btn_Reps_Clone_5to6_Click);
+            // 
+            // btn_Reps_Clone_6to7
+            // 
+            this.btn_Reps_Clone_6to7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_Reps_Clone_6to7.Image = ((System.Drawing.Image)(resources.GetObject("btn_Reps_Clone_6to7.Image")));
+            this.btn_Reps_Clone_6to7.Location = new System.Drawing.Point(184, 243);
+            this.btn_Reps_Clone_6to7.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_Reps_Clone_6to7.Name = "btn_Reps_Clone_6to7";
+            this.btn_Reps_Clone_6to7.Size = new System.Drawing.Size(40, 40);
+            this.btn_Reps_Clone_6to7.TabIndex = 29;
+            this.btn_Reps_Clone_6to7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btn_Reps_Clone_6to7.UseVisualStyleBackColor = true;
+            this.btn_Reps_Clone_6to7.Click += new System.EventHandler(this.btn_Reps_Clone_6to7_Click);
+            // 
+            // btn_Reps_Clone_7to8
+            // 
+            this.btn_Reps_Clone_7to8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_Reps_Clone_7to8.Image = ((System.Drawing.Image)(resources.GetObject("btn_Reps_Clone_7to8.Image")));
+            this.btn_Reps_Clone_7to8.Location = new System.Drawing.Point(184, 283);
+            this.btn_Reps_Clone_7to8.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_Reps_Clone_7to8.Name = "btn_Reps_Clone_7to8";
+            this.btn_Reps_Clone_7to8.Size = new System.Drawing.Size(40, 40);
+            this.btn_Reps_Clone_7to8.TabIndex = 30;
+            this.btn_Reps_Clone_7to8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btn_Reps_Clone_7to8.UseVisualStyleBackColor = true;
+            this.btn_Reps_Clone_7to8.Click += new System.EventHandler(this.btn_Reps_Clone_7to8_Click);
+            // 
+            // btn_Weight_Clone_7to8
+            // 
+            this.btn_Weight_Clone_7to8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_Weight_Clone_7to8.Image = ((System.Drawing.Image)(resources.GetObject("btn_Weight_Clone_7to8.Image")));
+            this.btn_Weight_Clone_7to8.Location = new System.Drawing.Point(190, 283);
+            this.btn_Weight_Clone_7to8.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_Weight_Clone_7to8.Name = "btn_Weight_Clone_7to8";
+            this.btn_Weight_Clone_7to8.Size = new System.Drawing.Size(40, 40);
+            this.btn_Weight_Clone_7to8.TabIndex = 37;
+            this.btn_Weight_Clone_7to8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btn_Weight_Clone_7to8.UseVisualStyleBackColor = true;
+            this.btn_Weight_Clone_7to8.Click += new System.EventHandler(this.btn_Weight_Clone_7to8_Click);
+            // 
+            // btn_Weight_Clone_6to7
+            // 
+            this.btn_Weight_Clone_6to7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_Weight_Clone_6to7.Image = ((System.Drawing.Image)(resources.GetObject("btn_Weight_Clone_6to7.Image")));
+            this.btn_Weight_Clone_6to7.Location = new System.Drawing.Point(190, 243);
+            this.btn_Weight_Clone_6to7.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_Weight_Clone_6to7.Name = "btn_Weight_Clone_6to7";
+            this.btn_Weight_Clone_6to7.Size = new System.Drawing.Size(40, 40);
+            this.btn_Weight_Clone_6to7.TabIndex = 36;
+            this.btn_Weight_Clone_6to7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btn_Weight_Clone_6to7.UseVisualStyleBackColor = true;
+            this.btn_Weight_Clone_6to7.Click += new System.EventHandler(this.btn_Weight_Clone_6to7_Click);
+            // 
+            // btn_Weight_Clone_5to6
+            // 
+            this.btn_Weight_Clone_5to6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_Weight_Clone_5to6.Image = ((System.Drawing.Image)(resources.GetObject("btn_Weight_Clone_5to6.Image")));
+            this.btn_Weight_Clone_5to6.Location = new System.Drawing.Point(190, 205);
+            this.btn_Weight_Clone_5to6.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_Weight_Clone_5to6.Name = "btn_Weight_Clone_5to6";
+            this.btn_Weight_Clone_5to6.Size = new System.Drawing.Size(40, 40);
+            this.btn_Weight_Clone_5to6.TabIndex = 35;
+            this.btn_Weight_Clone_5to6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btn_Weight_Clone_5to6.UseVisualStyleBackColor = true;
+            this.btn_Weight_Clone_5to6.Click += new System.EventHandler(this.btn_Weight_Clone_5to6_Click);
+            // 
+            // btn_Weight_Clone_4to5
+            // 
+            this.btn_Weight_Clone_4to5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_Weight_Clone_4to5.Image = ((System.Drawing.Image)(resources.GetObject("btn_Weight_Clone_4to5.Image")));
+            this.btn_Weight_Clone_4to5.Location = new System.Drawing.Point(190, 165);
+            this.btn_Weight_Clone_4to5.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_Weight_Clone_4to5.Name = "btn_Weight_Clone_4to5";
+            this.btn_Weight_Clone_4to5.Size = new System.Drawing.Size(40, 40);
+            this.btn_Weight_Clone_4to5.TabIndex = 34;
+            this.btn_Weight_Clone_4to5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btn_Weight_Clone_4to5.UseVisualStyleBackColor = true;
+            this.btn_Weight_Clone_4to5.Click += new System.EventHandler(this.btn_Weight_Clone_4to5_Click);
+            // 
+            // btn_Weight_Clone_3to4
+            // 
+            this.btn_Weight_Clone_3to4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_Weight_Clone_3to4.Image = ((System.Drawing.Image)(resources.GetObject("btn_Weight_Clone_3to4.Image")));
+            this.btn_Weight_Clone_3to4.Location = new System.Drawing.Point(190, 125);
+            this.btn_Weight_Clone_3to4.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_Weight_Clone_3to4.Name = "btn_Weight_Clone_3to4";
+            this.btn_Weight_Clone_3to4.Size = new System.Drawing.Size(40, 40);
+            this.btn_Weight_Clone_3to4.TabIndex = 33;
+            this.btn_Weight_Clone_3to4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btn_Weight_Clone_3to4.UseVisualStyleBackColor = true;
+            this.btn_Weight_Clone_3to4.Click += new System.EventHandler(this.btn_Weight_Clone_3to4_Click);
+            // 
+            // btn_Weight_Clone_2to3
+            // 
+            this.btn_Weight_Clone_2to3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_Weight_Clone_2to3.Image = ((System.Drawing.Image)(resources.GetObject("btn_Weight_Clone_2to3.Image")));
+            this.btn_Weight_Clone_2to3.Location = new System.Drawing.Point(190, 85);
+            this.btn_Weight_Clone_2to3.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_Weight_Clone_2to3.Name = "btn_Weight_Clone_2to3";
+            this.btn_Weight_Clone_2to3.Size = new System.Drawing.Size(40, 40);
+            this.btn_Weight_Clone_2to3.TabIndex = 32;
+            this.btn_Weight_Clone_2to3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btn_Weight_Clone_2to3.UseVisualStyleBackColor = true;
+            this.btn_Weight_Clone_2to3.Click += new System.EventHandler(this.btn_Weight_Clone_2to3_Click);
+            // 
+            // btn_Weight_Clone_1to2
+            // 
+            this.btn_Weight_Clone_1to2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_Weight_Clone_1to2.Image = ((System.Drawing.Image)(resources.GetObject("btn_Weight_Clone_1to2.Image")));
+            this.btn_Weight_Clone_1to2.Location = new System.Drawing.Point(190, 45);
+            this.btn_Weight_Clone_1to2.Margin = new System.Windows.Forms.Padding(0);
+            this.btn_Weight_Clone_1to2.Name = "btn_Weight_Clone_1to2";
+            this.btn_Weight_Clone_1to2.Size = new System.Drawing.Size(40, 40);
+            this.btn_Weight_Clone_1to2.TabIndex = 31;
+            this.btn_Weight_Clone_1to2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btn_Weight_Clone_1to2.UseVisualStyleBackColor = true;
+            this.btn_Weight_Clone_1to2.Click += new System.EventHandler(this.btn_Weight_Clone_1to2_Click);
             // 
             // LandingForm
             // 
@@ -853,9 +1080,22 @@
         private System.Windows.Forms.TextBox txt_Constate;
         private System.Windows.Forms.TextBox txt_PID;
         private System.Windows.Forms.Button btn_PID;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btn_Reps_Clone_3to4;
+        private System.Windows.Forms.Button btn_Reps_Clone_2to3;
+        private System.Windows.Forms.Button btn_Reps_Clone_1to2;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripButton btn_Refresh;
+        private System.Windows.Forms.Button btn_Reps_Clone_7to8;
+        private System.Windows.Forms.Button btn_Reps_Clone_6to7;
+        private System.Windows.Forms.Button btn_Reps_Clone_5to6;
+        private System.Windows.Forms.Button btn_Reps_Clone_4to5;
+        private System.Windows.Forms.Button btn_Weight_Clone_7to8;
+        private System.Windows.Forms.Button btn_Weight_Clone_6to7;
+        private System.Windows.Forms.Button btn_Weight_Clone_5to6;
+        private System.Windows.Forms.Button btn_Weight_Clone_4to5;
+        private System.Windows.Forms.Button btn_Weight_Clone_3to4;
+        private System.Windows.Forms.Button btn_Weight_Clone_2to3;
+        private System.Windows.Forms.Button btn_Weight_Clone_1to2;
     }
 }
 

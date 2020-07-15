@@ -10,3 +10,15 @@ C:\GitHub\Workout-Tracker-SQLite\Demo Code\SQLiteDemo_End\DemoLibrary\obj\Debug\
 C:\GitHub\Workout-Tracker-SQLite\Demo Code\SQLiteDemo_End\DemoLibrary\obj\Debug\DemoLibrary.csproj.CopyComplete
 C:\GitHub\Workout-Tracker-SQLite\Demo Code\SQLiteDemo_End\DemoLibrary\obj\Debug\DemoLibrary.dll
 C:\GitHub\Workout-Tracker-SQLite\Demo Code\SQLiteDemo_End\DemoLibrary\obj\Debug\DemoLibrary.pdb
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\Demo Code\SQLiteDemo_End\DemoLibrary\bin\Debug\DemoLibrary.dll
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\Demo Code\SQLiteDemo_End\DemoLibrary\bin\Debug\DemoLibrary.pdb
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\Demo Code\SQLiteDemo_End\DemoLibrary\bin\Debug\Dapper.dll
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\Demo Code\SQLiteDemo_End\DemoLibrary\bin\Debug\System.Data.SQLite.dll
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\Demo Code\SQLiteDemo_End\DemoLibrary\bin\Debug\Dapper.xml
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\Demo Code\SQLiteDemo_End\DemoLibrary\bin\Debug\System.Data.SQLite.xml
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\Demo Code\SQLiteDemo_End\DemoLibrary\bin\Debug\System.Data.SQLite.dll.config
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\Demo Code\SQLiteDemo_End\DemoLibrary\obj\Debug\DemoLibrary.csprojAssemblyReference.cache
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\Demo Code\SQLiteDemo_End\DemoLibrary\obj\Debug\DemoLibrary.csproj.CoreCompileInputs.cache
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\Demo Code\SQLiteDemo_End\DemoLibrary\obj\Debug\DemoLibrary.csproj.CopyComplete
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\Demo Code\SQLiteDemo_End\DemoLibrary\obj\Debug\DemoLibrary.dll
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\Demo Code\SQLiteDemo_End\DemoLibrary\obj\Debug\DemoLibrary.pdb

@@ -61,6 +61,7 @@
     </Reference>
     <Reference Include="System.ServiceProcess" />
     <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -73,53 +74,55 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Daily_Progress.cs" />
-    <Compile Include="DataAccess.cs" />
-    <Compile Include="DataForm.cs">
+    <Compile Include="Data Models\Daily_Progress.cs" />
+    <Compile Include="Classes\DataAccess.cs" />
+    <Compile Include="Forms\DataForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DataForm.Designer.cs">
+    <Compile Include="Forms\DataForm.Designer.cs">
       <DependentUpon>DataForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="LandingForm.cs">
+    <Compile Include="Forms\LandingForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LandingForm.Designer.cs">
+    <Compile Include="Forms\LandingForm.Designer.cs">
       <DependentUpon>LandingForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Personal_Details.cs">
+    <Compile Include="Forms\Personal_Details.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Personal_Details.Designer.cs">
+    <Compile Include="Forms\Personal_Details.Designer.cs">
       <DependentUpon>Personal_Details.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="Data Models\Person_Model.cs" />
+    <Compile Include="Classes\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Schedule.cs">
+    <Compile Include="Forms\Schedule.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Schedule.Designer.cs">
+    <Compile Include="Forms\Schedule.Designer.cs">
       <DependentUpon>Schedule.cs</DependentUpon>
     </Compile>
-    <Compile Include="Visualization.cs">
+    <Compile Include="Forms\Chart_Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Visualization.Designer.cs">
-      <DependentUpon>Visualization.cs</DependentUpon>
+    <Compile Include="Forms\Chart_Form.Designer.cs">
+      <DependentUpon>Chart_Form.cs</DependentUpon>
     </Compile>
-    <Compile Include="Workout_Details.cs">
+    <Compile Include="Forms\Workout_Details.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Workout_Details.Designer.cs">
+    <Compile Include="Forms\Workout_Details.Designer.cs">
       <DependentUpon>Workout_Details.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="DataForm.resx">
+    <Compile Include="Data Models\Workout_Model.cs" />
+    <EmbeddedResource Include="Forms\DataForm.resx">
       <DependentUpon>DataForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LandingForm.resx">
+    <EmbeddedResource Include="Forms\LandingForm.resx">
       <DependentUpon>LandingForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Personal_Details.resx">
+    <EmbeddedResource Include="Forms\Personal_Details.resx">
       <DependentUpon>Personal_Details.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -131,16 +134,16 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Schedule.resx">
+    <EmbeddedResource Include="Forms\Schedule.resx">
       <DependentUpon>Schedule.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Visualization.resx">
-      <DependentUpon>Visualization.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Chart_Form.resx">
+      <DependentUpon>Chart_Form.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Workout_Details.resx">
+    <EmbeddedResource Include="Forms\Workout_Details.resx">
       <DependentUpon>Workout_Details.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="packages.config" />
+    <None Include="Configs\packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -155,7 +158,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
+    <None Include="Configs\App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="packages\System.Data.SQLite.Core.1.0.113.1\build\net46\System.Data.SQLite.Core.targets" Condition="Exists('packages\System.Data.SQLite.Core.1.0.113.1\build\net46\System.Data.SQLite.Core.targets')" />

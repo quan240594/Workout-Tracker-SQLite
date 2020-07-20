@@ -19,10 +19,9 @@ namespace Workout_Tracker_SQLite
         IDbConnection cn = new SQLiteConnection(DataAccess.ConString("Default"));
         string eID = "";
         string pID = "";
-        string baseQuery = "SELECT [Date], [Full_Name], [Exercise_Name], [Total_Sets], [Total_Reps], [Average_Reps], [Average_Weight] FROM [Daily Progress] dp, [Person] p, [Exercise Details] ed " +
-            "WHERE  (dp.[Exercise_ID] = ed.[Exercise_ID] AND dp.[Person_ID] = p.[Person_ID]) ";
-        string eFilter = " AND ed.[Exercise_ID] = ";
-        string pFilter = " AND p.[Person ID] = ";
+        string baseQuery = "SELECT [Date], [Total_Sets], [Total_Reps], [Average_Reps], [Average_Weight] FROM [Daily Progress]";
+        string eFilter = "  WHERE [Exercise_ID] = ";
+        string pFilter = " AND [Person_ID] = ";
         string dateOrder = " ORDER BY [Date]";
 
         #endregion
@@ -84,8 +83,8 @@ namespace Workout_Tracker_SQLite
         #region Load Chart
         private void loadChart()
         {
-            try
-            {
+                pID = cb_Person_Name.SelectedValue.ToString();
+                eID = cb_Workout_Name.SelectedValue.ToString();
                 chart1.Titles.Clear();
                 chart1.Series.Clear();
 
@@ -95,15 +94,10 @@ namespace Workout_Tracker_SQLite
                 DataTable dt = new DataTable();
 
                 dt.Load(dr);
+
+                chart1.DataSource = dt;
                 chart1.DataBind();
                 con.Close();
-
-                chart1.DataSource = dt;              
-
-
-                cb_Total_Days.DataSource = dt;
-                cb_Total_Days.DisplayMember = "Workout_Days";
-
 
                 chart1.Titles.Add(cb_Workout_Name.SelectedText.ToString());
                 chart1.Titles.Add(cb_Person_Name.SelectedText.ToString());
@@ -155,11 +149,6 @@ namespace Workout_Tracker_SQLite
 
                 chart1.ChartAreas[0].AxisY.MajorGrid.Enabled = false;
                 chart1.ChartAreas[0].AxisX.MajorGrid.LineDashStyle = ChartDashStyle.Dot;
-
-                
-            }
-            catch (Exception) { con.Close(); }
-            finally { con.Close(); }
         }
 
 #endregion
@@ -171,40 +160,35 @@ namespace Workout_Tracker_SQLite
             chart1.Series.Clear();
         }
 
-        private void chk_TotalSets_CheckedStateChanged(object sender, EventArgs e)
+        private void btn_LoadChart_Click(object sender, EventArgs e)
+        {
+            cb_Workout_Name.Focus();
+            //chk_Avg_Reps.Checked = true;
+            //chk_Avg_Weight.Checked = true;
+            //chk_Total_Reps.Checked = true;
+            //chk_Total_Sets.Checked = true;
+            loadChart();
+        }
+
+        private void cb_Person_Name_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            pID = cb_Person_Name.SelectedValue.ToString();
+            SQLiteCommand cmd = new SQLiteCommand("Select * from [Person] WHERE [Person_ID] = " + pID, con);
+            con.Open();
+            SQLiteDataReader dr = cmd.ExecuteReader();
+            DataTable dt = new DataTable();
+
+            dt.Load(dr);
+            con.Close();
+
+            cb_Total_Days.DataSource = dt;
+            cb_Total_Days.DisplayMember = "Workout_Days";
+        }
+
+        private void chk_Total_Sets_CheckStateChanged(object sender, EventArgs e)
         {
             Series ts = chart1.Series["Total Sets"];
             ts.Enabled = chk_Total_Sets.Checked;
-        }
-
-        private void chk_TotalReps_CheckStateChanged(object sender, EventArgs e)
-        {
-            Series tr = chart1.Series["Total Reps"];
-            tr.Enabled = chk_Total_Reps.Checked;
-        }
-
-        private void chk_AvgReps_CheckStateChanged(object sender, EventArgs e)
-        {
-            Series ar = chart1.Series["Average Reps"];
-            ar.Enabled = chk_Avg_Reps.Checked;
-        }
-
-        private void chk_AvgWeight_CheckStateChanged(object sender, EventArgs e)
-        {
-            Series aw = chart1.Series["Average Weight"];
-            aw.Enabled = chk_Avg_Weight.Checked;
-        }
-
-        private void btn_LoadChart_Click(object sender, EventArgs e)
-        {
-            pID = cb_Person_Name.SelectedValue.ToString();
-            eID = cb_Workout_Name.SelectedValue.ToString();
-            cb_Workout_Name.Focus();
-            chk_Avg_Reps.Checked = true;
-            chk_Avg_Weight.Checked = true;
-            chk_Total_Reps.Checked = true;
-            chk_Total_Sets.Checked = true;
-            loadChart();
         }
     }
 }

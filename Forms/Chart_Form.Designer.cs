@@ -155,7 +155,6 @@
             this.chk_Avg_Weight.TabIndex = 3;
             this.chk_Avg_Weight.Text = "Average Weight";
             this.chk_Avg_Weight.UseVisualStyleBackColor = true;
-            this.chk_Avg_Weight.CheckStateChanged += new System.EventHandler(this.chk_AvgWeight_CheckStateChanged);
             // 
             // chk_Avg_Reps
             // 
@@ -166,7 +165,6 @@
             this.chk_Avg_Reps.TabIndex = 2;
             this.chk_Avg_Reps.Text = "Average Reps";
             this.chk_Avg_Reps.UseVisualStyleBackColor = true;
-            this.chk_Avg_Reps.CheckStateChanged += new System.EventHandler(this.chk_AvgReps_CheckStateChanged);
             // 
             // chk_Total_Reps
             // 
@@ -177,7 +175,6 @@
             this.chk_Total_Reps.TabIndex = 1;
             this.chk_Total_Reps.Text = "Total Reps";
             this.chk_Total_Reps.UseVisualStyleBackColor = true;
-            this.chk_Total_Reps.CheckStateChanged += new System.EventHandler(this.chk_TotalReps_CheckStateChanged);
             // 
             // chk_Total_Sets
             // 
@@ -188,7 +185,7 @@
             this.chk_Total_Sets.TabIndex = 0;
             this.chk_Total_Sets.Text = "Total Sets";
             this.chk_Total_Sets.UseVisualStyleBackColor = true;
-            this.chk_Total_Sets.CheckStateChanged += new System.EventHandler(this.chk_TotalSets_CheckedStateChanged);
+            this.chk_Total_Sets.CheckStateChanged += new System.EventHandler(this.chk_Total_Sets_CheckStateChanged);
             // 
             // label2
             // 
@@ -214,6 +211,7 @@
             this.cb_Person_Name.Name = "cb_Person_Name";
             this.cb_Person_Name.Size = new System.Drawing.Size(189, 32);
             this.cb_Person_Name.TabIndex = 1;
+            this.cb_Person_Name.SelectionChangeCommitted += new System.EventHandler(this.cb_Person_Name_SelectionChangeCommitted);
             // 
             // label1
             // 
@@ -247,8 +245,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.GroupBox gb_Filters;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.CheckBox chk_Avg_Weight;
@@ -263,5 +259,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cb_Total_Days;
         private System.Windows.Forms.Button btn_Reset;
+        public System.Windows.Forms.DataVisualization.Charting.Chart chart1;
     }
 }

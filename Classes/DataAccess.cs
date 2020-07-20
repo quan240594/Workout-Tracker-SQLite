@@ -57,6 +57,7 @@ namespace Workout_Tracker_SQLite
             }
         }
 
+
         public static void SavePersonalDetails( Person_Model person)
         {
             using (IDbConnection cn = new SQLiteConnection(DataAccess.ConString("Default")))

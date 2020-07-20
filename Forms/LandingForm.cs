@@ -85,6 +85,29 @@ namespace Workout_Tracker_SQLite
                 }
             }
         }
+
+        private void filter_CB_Workout()
+        {
+            wd = dateTimePicker1.Value.DayOfWeek.ToString();
+            cb_Person_Name.Enabled = true;
+            using (cn)
+            {
+                SQLiteCommand cmd = new SQLiteCommand("Select * from[Exercise Details] where[Day_1] like '" + wd + "' or[Day_2] like '" + wd + "' Order by[Exercise_Name]", con);
+                cmd.Connection = con;
+                con.Open();
+                using (SQLiteDataReader dr = cmd.ExecuteReader())
+                {
+                    DataTable dt = new DataTable();
+                    dt.Load(dr);
+                    con.Close();
+                    cb_Workout_Name.DataSource = dt;
+                    cb_Workout_Name.DisplayMember = "Exercise_Name";
+                    cb_Workout_Name.ValueMember = "Exercise_ID";
+                }
+            }
+        }
+
+
         #endregion
 
         #region Connection State Test
@@ -114,15 +137,13 @@ namespace Workout_Tracker_SQLite
         {
             try
             {
-                //streak++;
-                //SQLiteCommand cmd = new SQLiteCommand("Update [Person] Set [Workout_Days] = " + streak.ToString() + "Where [Person_ID] = " + cb_Person_Name.SelectedValue.ToString());
-                //con.Open();
-                //con.Execute(cmd.ToString());
+                streak = Int32.Parse(txt_Total_Days.Text) + 1;
+                SQLiteCommand cmd = new SQLiteCommand("UPDATE [Person] SET [Workout_Days] = " + streak.ToString() + " WHERE [Person_ID] = " + cb_Person_Name.SelectedValue.ToString(), con);
 
                 Daily_Progress d = new Daily_Progress();
                 //Map the values to the data model of Daily Progress
 
-                d.Date = dateTimePicker1.Value;
+                d.Date = dateTimePicker1.Value.Date;
                 d.Exercise_ID = Int32.Parse(cb_Workout_Name.SelectedValue.ToString());
                 d.Person_ID = Int32.Parse(cb_Person_Name.SelectedValue.ToString());
 
@@ -149,6 +170,9 @@ namespace Workout_Tracker_SQLite
                 d.S7_Weight = Convert.ToDouble(txt_S7_Weight.Text);
                 d.S8_Weight = Convert.ToDouble(txt_S8_Weight.Text);
 
+                con.Open();
+                cmd.ExecuteNonQuery();
+
                 DataAccess.SaveDailyProgress(d);
 
                 con.Close();
@@ -172,6 +196,27 @@ namespace Workout_Tracker_SQLite
         private void reset()
         {
             dateTimePicker1.Value = System.DateTime.Now;
+
+            chk_All_Workouts.Checked = false;
+
+            txt_S1_Reps.Text = "0";
+            txt_S2_Reps.Text = "0";
+            txt_S3_Reps.Text = "0";
+            txt_S4_Reps.Text = "0";
+            txt_S5_Reps.Text = "0";
+            txt_S6_Reps.Text = "0";
+            txt_S7_Reps.Text = "0";
+            txt_S8_Reps.Text = "0";
+
+            txt_S1_Weight.Text = "0";
+            txt_S2_Weight.Text = "0";
+            txt_S3_Weight.Text = "0";
+            txt_S4_Weight.Text = "0";
+            txt_S5_Weight.Text = "0";
+            txt_S6_Weight.Text = "0";
+            txt_S7_Weight.Text = "0";
+            txt_S8_Weight.Text = "0";
+
             cb_Person_Name.Enabled = false;
             cb_Workout_Name.Enabled = false;
 
@@ -199,23 +244,7 @@ namespace Workout_Tracker_SQLite
         #region Boxes Event Hanlders
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
-            wd = dateTimePicker1.Value.DayOfWeek.ToString();
-            cb_Person_Name.Enabled = true;
-            using (cn)
-            {
-                SQLiteCommand cmd = new SQLiteCommand("Select * from[Exercise Details] where[Day_1] like '" + wd + "' or[Day_2] like '" + wd + "' Order by[Exercise_Name]", con);
-                cmd.Connection = con;
-                con.Open();
-                using (SQLiteDataReader dr = cmd.ExecuteReader())
-                {
-                    DataTable dt = new DataTable();
-                    dt.Load(dr);
-                    con.Close();
-                    cb_Workout_Name.DataSource = dt;
-                    cb_Workout_Name.DisplayMember = "Exercise_Name";
-                    cb_Workout_Name.ValueMember = "Exercise_ID";
-                }
-            }
+            filter_CB_Workout();
         }
 
         private void cb_Person_Name_SelectionChangeCommitted(object sender, EventArgs e)
@@ -223,6 +252,12 @@ namespace Workout_Tracker_SQLite
             cb_Workout_Name.Enabled = true;
             txt_Total_Days.Text = cb_Person_Name.SelectedValue.ToString();
             calcTotalWorkoutDays();
+        }
+
+        private void chk_All_Workouts_CheckStateChanged(object sender, EventArgs e)
+        {
+            if (chk_All_Workouts.Checked == true) { fillCB_Workout(); }
+            else if (chk_All_Workouts.Checked == false) { filter_CB_Workout(); }
         }
 
         private void cb_Workout_Name_SelectionChangeCommitted(object sender, EventArgs e)
@@ -630,7 +665,7 @@ namespace Workout_Tracker_SQLite
             wd.Show();
         }
 
-        private void toolStripButton1_Click(object sender, EventArgs e)
+        private void btn_ViewData_Click(object sender, EventArgs e)
         {
             DataForm df = new DataForm();
             df.Show();
@@ -777,5 +812,7 @@ namespace Workout_Tracker_SQLite
             }
         }
         #endregion
+
+        
     }
 }

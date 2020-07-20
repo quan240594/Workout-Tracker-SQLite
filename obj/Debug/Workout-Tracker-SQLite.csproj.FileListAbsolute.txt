@@ -58,3 +58,14 @@ G:\Programming\GitHub Repo\Workout-Tracker-SQLite\obj\Debug\Workout-Tracker-SQLi
 G:\Programming\GitHub Repo\Workout-Tracker-SQLite\obj\Debug\Workout-Tracker-SQLite.pdb
 G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Debug\Workout_Tracker_SQLite_DB.db
 C:\GitHub\Workout-Tracker-SQLite\bin\Debug\Workout_Tracker_SQLite_DB.db
+C:\GitHub\Workout-Tracker-SQLite\bin\Debug\Microsoft.Data.Sqlite.dll
+C:\GitHub\Workout-Tracker-SQLite\bin\Debug\SQLitePCLRaw.core.dll
+C:\GitHub\Workout-Tracker-SQLite\bin\Debug\System.Buffers.dll
+C:\GitHub\Workout-Tracker-SQLite\bin\Debug\System.Memory.dll
+C:\GitHub\Workout-Tracker-SQLite\bin\Debug\System.Numerics.Vectors.dll
+C:\GitHub\Workout-Tracker-SQLite\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\GitHub\Workout-Tracker-SQLite\bin\Debug\Microsoft.Data.Sqlite.xml
+C:\GitHub\Workout-Tracker-SQLite\bin\Debug\System.Buffers.xml
+C:\GitHub\Workout-Tracker-SQLite\bin\Debug\System.Memory.xml
+C:\GitHub\Workout-Tracker-SQLite\bin\Debug\System.Numerics.Vectors.xml
+C:\GitHub\Workout-Tracker-SQLite\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml

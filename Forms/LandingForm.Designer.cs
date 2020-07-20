@@ -40,7 +40,7 @@
             this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
             this.btn_Workout_Details = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.btn_ViewData = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.btn_Refresh = new System.Windows.Forms.ToolStripButton();
             this.label1 = new System.Windows.Forms.Label();
@@ -130,7 +130,7 @@
             this.toolStripSeparator6,
             this.btn_Workout_Details,
             this.toolStripSeparator7,
-            this.toolStripButton1,
+            this.btn_ViewData,
             this.toolStripSeparator1,
             this.btn_Refresh});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
@@ -214,15 +214,15 @@
             this.toolStripSeparator7.Name = "toolStripSeparator7";
             this.toolStripSeparator7.Size = new System.Drawing.Size(6, 32);
             // 
-            // toolStripButton1
+            // btn_ViewData
             // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(29, 29);
-            this.toolStripButton1.Text = "toolStripButton1";
-            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
+            this.btn_ViewData.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btn_ViewData.Image = ((System.Drawing.Image)(resources.GetObject("btn_ViewData.Image")));
+            this.btn_ViewData.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_ViewData.Name = "btn_ViewData";
+            this.btn_ViewData.Size = new System.Drawing.Size(29, 29);
+            this.btn_ViewData.Text = "toolStripButton1";
+            this.btn_ViewData.Click += new System.EventHandler(this.btn_ViewData_Click);
             // 
             // toolStripSeparator1
             // 
@@ -303,6 +303,7 @@
             this.chk_All_Workouts.TabIndex = 8;
             this.chk_All_Workouts.Text = "All Workouts";
             this.chk_All_Workouts.UseVisualStyleBackColor = true;
+            this.chk_All_Workouts.CheckStateChanged += new System.EventHandler(this.chk_All_Workouts_CheckStateChanged);
             // 
             // txt_S1_Reps
             // 
@@ -1023,7 +1024,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
         private System.Windows.Forms.ToolStripButton btn_Workout_Details;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator7;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripButton btn_ViewData;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.ComboBox cb_Person_Name;

@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="Workout-Tracker-SQLite.exe" version="1.0.0.4" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="Workout Tracker.exe" version="1.0.0.7" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <description asmv2:iconFile="QD Logo.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="Workout-Tracker-SQLite" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
-    <commandLine file="Workout-Tracker-SQLite.exe" parameters="" />
+    <assemblyIdentity name="Workout Tracker" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Workout Tracker.exe" parameters="" />
   </entryPoint>
   <trustInfo>
     <security>
@@ -187,14 +187,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Workout-Tracker-SQLite.exe" size="1210816">
-      <assemblyIdentity name="Workout-Tracker-SQLite" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Workout Tracker.exe" size="1210816">
+      <assemblyIdentity name="Workout Tracker" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>cFIuTepkVMzzS2NFwQ+MjzjJds34aPECsmRNDvJ3/io=</dsig:DigestValue>
+        <dsig:DigestValue>xgruE58vfaeAtTfpZzPz1ctj1w7FYQ1Z+gqGD6Sssos=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -207,6 +207,15 @@
       <dsig:DigestValue>D/BpnvuP7SQcL9NljqYTRUNnpFkQsXyqKFWV3cDVYes=</dsig:DigestValue>
     </hash>
   </file>
+  <file name="Workout Tracker.exe.config" size="358">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>q+Qqb3ajFggLDlYBaa5gOPC8Qpkwabb/g7CSBMNe8fg=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="Workout_Tracker_SQLite_DB.db" size="49152">
     <hash>
       <dsig:Transforms>
@@ -214,15 +223,6 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>RdGdNEJkolifNcFKUZyj/bZnLMhhaktHcne2sLoVscI=</dsig:DigestValue>
-    </hash>
-  </file>
-  <file name="Workout-Tracker-SQLite.exe.config" size="358">
-    <hash>
-      <dsig:Transforms>
-        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-      </dsig:Transforms>
-      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>q+Qqb3ajFggLDlYBaa5gOPC8Qpkwabb/g7CSBMNe8fg=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">

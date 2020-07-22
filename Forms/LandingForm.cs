@@ -110,27 +110,6 @@ namespace Workout_Tracker_SQLite
 
         #endregion
 
-        #region Connection State Test
-        private void conStateCheck()
-        {
-            if (con.State == System.Data.ConnectionState.Open) 
-            { 
-                txt_Constate.Text = "Open";
-            }
-            else 
-            { 
-                txt_Constate.Text = "Closed";
-            }
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            conStateCheck();
-        }
-
-        
-        #endregion
-
         #region Tool Strip Buttons' functions
 
         private void btn_Save_Click(object sender, EventArgs e)

@@ -51,10 +51,11 @@
             this.dataGridView_DailyProgress.AllowUserToDeleteRows = false;
             this.dataGridView_DailyProgress.AllowUserToOrderColumns = true;
             this.dataGridView_DailyProgress.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView_DailyProgress.Location = new System.Drawing.Point(12, 124);
+            this.dataGridView_DailyProgress.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dataGridView_DailyProgress.Location = new System.Drawing.Point(0, 109);
             this.dataGridView_DailyProgress.Name = "dataGridView_DailyProgress";
             this.dataGridView_DailyProgress.ReadOnly = true;
-            this.dataGridView_DailyProgress.Size = new System.Drawing.Size(1245, 488);
+            this.dataGridView_DailyProgress.Size = new System.Drawing.Size(1269, 515);
             this.dataGridView_DailyProgress.TabIndex = 0;
             // 
             // tableLayoutPanel1

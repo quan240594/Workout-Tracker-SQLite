@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30128.74
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workout-Tracker-SQLite", "Workout-Tracker-SQLite.csproj", "{FEC1A1CA-4DC0-4E6F-9C2F-AB3D8F19F7BC}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Workout-Tracker-Setup", "Workout-Tracker-Setup\Workout-Tracker-Setup.vdproj", "{BBD3447A-498F-476D-ADAD-E2489FBF5A51}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{FEC1A1CA-4DC0-4E6F-9C2F-AB3D8F19F7BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FEC1A1CA-4DC0-4E6F-9C2F-AB3D8F19F7BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FEC1A1CA-4DC0-4E6F-9C2F-AB3D8F19F7BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBD3447A-498F-476D-ADAD-E2489FBF5A51}.Debug|Any CPU.ActiveCfg = Debug
+		{BBD3447A-498F-476D-ADAD-E2489FBF5A51}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

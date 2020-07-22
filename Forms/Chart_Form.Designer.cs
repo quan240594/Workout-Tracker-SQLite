@@ -100,7 +100,6 @@
             // cb_Total_Days
             // 
             this.cb_Total_Days.DropDownStyle = System.Windows.Forms.ComboBoxStyle.Simple;
-            this.cb_Total_Days.Enabled = false;
             this.cb_Total_Days.FormattingEnabled = true;
             this.cb_Total_Days.Location = new System.Drawing.Point(178, 101);
             this.cb_Total_Days.Name = "cb_Total_Days";
@@ -155,6 +154,7 @@
             this.chk_Avg_Weight.TabIndex = 3;
             this.chk_Avg_Weight.Text = "Average Weight";
             this.chk_Avg_Weight.UseVisualStyleBackColor = true;
+            this.chk_Avg_Weight.CheckStateChanged += new System.EventHandler(this.chk_Avg_Weight_CheckStateChanged);
             // 
             // chk_Avg_Reps
             // 
@@ -165,6 +165,7 @@
             this.chk_Avg_Reps.TabIndex = 2;
             this.chk_Avg_Reps.Text = "Average Reps";
             this.chk_Avg_Reps.UseVisualStyleBackColor = true;
+            this.chk_Avg_Reps.CheckStateChanged += new System.EventHandler(this.chk_Avg_Reps_CheckStateChanged);
             // 
             // chk_Total_Reps
             // 
@@ -175,6 +176,7 @@
             this.chk_Total_Reps.TabIndex = 1;
             this.chk_Total_Reps.Text = "Total Reps";
             this.chk_Total_Reps.UseVisualStyleBackColor = true;
+            this.chk_Total_Reps.CheckStateChanged += new System.EventHandler(this.chk_Total_Reps_CheckStateChanged);
             // 
             // chk_Total_Sets
             // 

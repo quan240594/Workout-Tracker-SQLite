@@ -163,11 +163,11 @@ namespace Workout_Tracker_SQLite
         private void btn_LoadChart_Click(object sender, EventArgs e)
         {
             cb_Workout_Name.Focus();
-            //chk_Avg_Reps.Checked = true;
-            //chk_Avg_Weight.Checked = true;
-            //chk_Total_Reps.Checked = true;
-            //chk_Total_Sets.Checked = true;
             loadChart();
+            chk_Avg_Reps.Checked = true;
+            chk_Avg_Weight.Checked = true;
+            chk_Total_Reps.Checked = true;
+            chk_Total_Sets.Checked = true;
         }
 
         private void cb_Person_Name_SelectionChangeCommitted(object sender, EventArgs e)
@@ -189,6 +189,24 @@ namespace Workout_Tracker_SQLite
         {
             Series ts = chart1.Series["Total Sets"];
             ts.Enabled = chk_Total_Sets.Checked;
+        }
+
+        private void chk_Total_Reps_CheckStateChanged(object sender, EventArgs e)
+        {
+            Series tr = chart1.Series["Total Reps"];
+            tr.Enabled = chk_Total_Reps.Checked;
+        }
+
+        private void chk_Avg_Reps_CheckStateChanged(object sender, EventArgs e)
+        {
+            Series ar = chart1.Series["Average Reps"];
+            ar.Enabled = chk_Avg_Reps.Checked;
+        }
+
+        private void chk_Avg_Weight_CheckStateChanged(object sender, EventArgs e)
+        {
+            Series aw = chart1.Series["Average Weight"];
+            aw.Enabled = chk_Avg_Weight.Checked;
         }
     }
 }

@@ -106,8 +106,6 @@
             this.txt_Avg_Weight = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
             this.txt_Avg_Reps = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.txt_Constate = new System.Windows.Forms.TextBox();
             this.txt_Total_Days = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
             this.toolStrip1.SuspendLayout();
@@ -291,6 +289,8 @@
             this.cb_Workout_Name.Size = new System.Drawing.Size(332, 33);
             this.cb_Workout_Name.TabIndex = 7;
             this.cb_Workout_Name.DropDownClosed += new System.EventHandler(this.cb_Workout_Name_SelectionChangeCommitted);
+            this.cb_Workout_Name.Leave += new System.EventHandler(this.cb_Workout_Name_SelectionChangeCommitted);
+            this.cb_Workout_Name.MouseLeave += new System.EventHandler(this.cb_Workout_Name_SelectionChangeCommitted);
             // 
             // chk_All_Workouts
             // 
@@ -928,26 +928,6 @@
             this.txt_Avg_Reps.Size = new System.Drawing.Size(92, 30);
             this.txt_Avg_Reps.TabIndex = 16;
             // 
-            // button1
-            // 
-            this.button1.AutoSize = true;
-            this.button1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button1.Location = new System.Drawing.Point(361, 211);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(173, 35);
-            this.button1.TabIndex = 21;
-            this.button1.Text = "Connection State";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // txt_Constate
-            // 
-            this.txt_Constate.Location = new System.Drawing.Point(361, 252);
-            this.txt_Constate.Name = "txt_Constate";
-            this.txt_Constate.ReadOnly = true;
-            this.txt_Constate.Size = new System.Drawing.Size(173, 30);
-            this.txt_Constate.TabIndex = 22;
-            // 
             // txt_Total_Days
             // 
             this.txt_Total_Days.Location = new System.Drawing.Point(206, 327);
@@ -974,8 +954,6 @@
             this.ClientSize = new System.Drawing.Size(1401, 572);
             this.Controls.Add(this.label25);
             this.Controls.Add(this.txt_Total_Days);
-            this.Controls.Add(this.txt_Constate);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.txt_Avg_Weight);
             this.Controls.Add(this.label23);
@@ -1074,8 +1052,6 @@
         private System.Windows.Forms.TextBox txt_Avg_Weight;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.TextBox txt_Avg_Reps;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox txt_Constate;
         private System.Windows.Forms.Button btn_Reps_Clone_3to4;
         private System.Windows.Forms.Button btn_Reps_Clone_2to3;
         private System.Windows.Forms.Button btn_Reps_Clone_1to2;

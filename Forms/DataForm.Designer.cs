@@ -40,6 +40,7 @@
             this.btn_FilterAll = new System.Windows.Forms.Button();
             this.btn_ClearFilters = new System.Windows.Forms.Button();
             this.groupBox_Filters = new System.Windows.Forms.GroupBox();
+            this.btn_Delete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_DailyProgress)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox_Filters.SuspendLayout();
@@ -54,33 +55,37 @@
             this.dataGridView_DailyProgress.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dataGridView_DailyProgress.Location = new System.Drawing.Point(0, 109);
             this.dataGridView_DailyProgress.Name = "dataGridView_DailyProgress";
-            this.dataGridView_DailyProgress.ReadOnly = true;
-            this.dataGridView_DailyProgress.Size = new System.Drawing.Size(1269, 515);
+            this.dataGridView_DailyProgress.Size = new System.Drawing.Size(1300, 515);
             this.dataGridView_DailyProgress.TabIndex = 0;
+            this.dataGridView_DailyProgress.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_DailyProgress_CellContentClick);
+            this.dataGridView_DailyProgress.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_DailyProgress_CellContentClick);
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.ColumnCount = 4;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 66.66666F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 151F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
+            this.tableLayoutPanel1.ColumnCount = 5;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.cb_Person, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btn_Filter_Person, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.cb_Exercise, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.btn_FilterAll, 4, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btn_ClearFilters, 4, 1);
             this.tableLayoutPanel1.Controls.Add(this.btn_Filter_Exercise, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.btn_FilterAll, 3, 0);
-            this.tableLayoutPanel1.Controls.Add(this.btn_ClearFilters, 3, 1);
+            this.tableLayoutPanel1.Controls.Add(this.btn_Filter_Person, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.btn_Delete, 3, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 25);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 52.22222F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47.77778F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1263, 78);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1294, 78);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // label1
@@ -89,7 +94,7 @@
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(298, 40);
+            this.label1.Size = new System.Drawing.Size(252, 40);
             this.label1.TabIndex = 0;
             this.label1.Text = "Person";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -98,17 +103,17 @@
             // 
             this.cb_Person.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cb_Person.FormattingEnabled = true;
-            this.cb_Person.Location = new System.Drawing.Point(307, 3);
+            this.cb_Person.Location = new System.Drawing.Point(261, 3);
             this.cb_Person.Name = "cb_Person";
-            this.cb_Person.Size = new System.Drawing.Size(602, 32);
+            this.cb_Person.Size = new System.Drawing.Size(252, 32);
             this.cb_Person.TabIndex = 1;
             // 
             // btn_Filter_Person
             // 
             this.btn_Filter_Person.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_Filter_Person.Location = new System.Drawing.Point(915, 3);
+            this.btn_Filter_Person.Location = new System.Drawing.Point(519, 3);
             this.btn_Filter_Person.Name = "btn_Filter_Person";
-            this.btn_Filter_Person.Size = new System.Drawing.Size(145, 34);
+            this.btn_Filter_Person.Size = new System.Drawing.Size(252, 34);
             this.btn_Filter_Person.TabIndex = 9;
             this.btn_Filter_Person.Text = "Filter Person";
             this.btn_Filter_Person.UseVisualStyleBackColor = true;
@@ -120,7 +125,7 @@
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label2.Location = new System.Drawing.Point(3, 40);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(298, 38);
+            this.label2.Size = new System.Drawing.Size(252, 38);
             this.label2.TabIndex = 2;
             this.label2.Text = "Exercise";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -129,17 +134,17 @@
             // 
             this.cb_Exercise.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cb_Exercise.FormattingEnabled = true;
-            this.cb_Exercise.Location = new System.Drawing.Point(307, 43);
+            this.cb_Exercise.Location = new System.Drawing.Point(261, 43);
             this.cb_Exercise.Name = "cb_Exercise";
-            this.cb_Exercise.Size = new System.Drawing.Size(602, 32);
+            this.cb_Exercise.Size = new System.Drawing.Size(252, 32);
             this.cb_Exercise.TabIndex = 3;
             // 
             // btn_Filter_Exercise
             // 
             this.btn_Filter_Exercise.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_Filter_Exercise.Location = new System.Drawing.Point(915, 43);
+            this.btn_Filter_Exercise.Location = new System.Drawing.Point(519, 43);
             this.btn_Filter_Exercise.Name = "btn_Filter_Exercise";
-            this.btn_Filter_Exercise.Size = new System.Drawing.Size(145, 32);
+            this.btn_Filter_Exercise.Size = new System.Drawing.Size(252, 32);
             this.btn_Filter_Exercise.TabIndex = 10;
             this.btn_Filter_Exercise.Text = "Filter Exercise";
             this.btn_Filter_Exercise.UseVisualStyleBackColor = true;
@@ -148,9 +153,9 @@
             // btn_FilterAll
             // 
             this.btn_FilterAll.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_FilterAll.Location = new System.Drawing.Point(1066, 3);
+            this.btn_FilterAll.Location = new System.Drawing.Point(1035, 3);
             this.btn_FilterAll.Name = "btn_FilterAll";
-            this.btn_FilterAll.Size = new System.Drawing.Size(194, 34);
+            this.btn_FilterAll.Size = new System.Drawing.Size(256, 34);
             this.btn_FilterAll.TabIndex = 13;
             this.btn_FilterAll.Text = "Filter All";
             this.btn_FilterAll.UseVisualStyleBackColor = true;
@@ -159,11 +164,11 @@
             // btn_ClearFilters
             // 
             this.btn_ClearFilters.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_ClearFilters.Location = new System.Drawing.Point(1066, 43);
+            this.btn_ClearFilters.Location = new System.Drawing.Point(1035, 43);
             this.btn_ClearFilters.Name = "btn_ClearFilters";
-            this.btn_ClearFilters.Size = new System.Drawing.Size(194, 32);
+            this.btn_ClearFilters.Size = new System.Drawing.Size(256, 32);
             this.btn_ClearFilters.TabIndex = 14;
-            this.btn_ClearFilters.Text = "Clear Filters";
+            this.btn_ClearFilters.Text = "Refresh";
             this.btn_ClearFilters.UseVisualStyleBackColor = true;
             this.btn_ClearFilters.Click += new System.EventHandler(this.btn_ClearFilters_Click);
             // 
@@ -173,16 +178,27 @@
             this.groupBox_Filters.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupBox_Filters.Location = new System.Drawing.Point(0, 0);
             this.groupBox_Filters.Name = "groupBox_Filters";
-            this.groupBox_Filters.Size = new System.Drawing.Size(1269, 106);
+            this.groupBox_Filters.Size = new System.Drawing.Size(1300, 106);
             this.groupBox_Filters.TabIndex = 2;
             this.groupBox_Filters.TabStop = false;
             this.groupBox_Filters.Text = "Data Filters";
+            // 
+            // btn_Delete
+            // 
+            this.btn_Delete.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_Delete.Location = new System.Drawing.Point(777, 3);
+            this.btn_Delete.Name = "btn_Delete";
+            this.btn_Delete.Size = new System.Drawing.Size(252, 34);
+            this.btn_Delete.TabIndex = 15;
+            this.btn_Delete.Text = "Delete Selected Row";
+            this.btn_Delete.UseVisualStyleBackColor = true;
+            this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
             // 
             // DataForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1269, 624);
+            this.ClientSize = new System.Drawing.Size(1300, 624);
             this.Controls.Add(this.groupBox_Filters);
             this.Controls.Add(this.dataGridView_DailyProgress);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -212,5 +228,6 @@
         private System.Windows.Forms.Button btn_FilterAll;
         private System.Windows.Forms.Button btn_ClearFilters;
         private System.Windows.Forms.GroupBox groupBox_Filters;
+        private System.Windows.Forms.Button btn_Delete;
     }
 }

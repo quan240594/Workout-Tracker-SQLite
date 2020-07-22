@@ -22,7 +22,7 @@ namespace Workout_Tracker_SQLite
         int eID = 0;
         string sd = "";
         string ed = "";
-        string gridQuery = "Select [Date], [Exercise_Name], [Full_Name], [Total_Sets], [Total_Reps], [Average_Reps], [Average_Weight], " +
+        string gridQuery = "Select [ID], [Date], [Exercise_Name], [Full_Name], [Total_Sets], [Total_Reps], [Average_Reps], [Average_Weight], " +
                 "[S1_Reps], [S2_Reps], [S3_Reps], [S4_Reps], [S5_Reps], [S6_Reps], [S7_Reps], [S8_Reps], " +
                 "[S1_Weight], [S2_Weight], [S3_Weight], [S4_Weight], [S5_weight], [S6_Weight], [S7_Weight], [S8_Weight] " +
                 "FROM [Daily Progress] dp, [Exercise Details] ed, [Person] p where ([dp].[Exercise_ID] = [ed].[Exercise_ID] AND [p].[Person_ID] = [dp].[Person_ID] "; 
@@ -31,6 +31,8 @@ namespace Workout_Tracker_SQLite
         string gQuery_Exercise_Filter = "AND [ed].[Exercise_ID] = ";
 
         string orderQuery = ") ORDER BY [Date] DESC";
+
+        string rowID = "";
         #endregion
         public DataForm()
         {
@@ -139,6 +141,20 @@ namespace Workout_Tracker_SQLite
                 con.Close();
                 dataGridView_DailyProgress.DataSource = dt;
             }
+        }
+
+        private void dataGridView_DailyProgress_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            rowID = dataGridView_DailyProgress.Rows[e.RowIndex].Cells[0].Value.ToString();
+        }
+
+        private void btn_Delete_Click(object sender, EventArgs e)
+        {
+            SQLiteCommand cmd = new SQLiteCommand("DELETE FROM [DAILY PROGRESS] WHERE ID = " + rowID, con);
+            con.Open();
+            cmd.ExecuteNonQuery();
+            con.Close();
+            gridLoad();
         }
     }
 }

@@ -133,7 +133,7 @@
             this.btn_Refresh});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1401, 32);
+            this.toolStrip1.Size = new System.Drawing.Size(1104, 32);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -951,7 +951,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1401, 572);
+            this.ClientSize = new System.Drawing.Size(1104, 524);
             this.Controls.Add(this.label25);
             this.Controls.Add(this.txt_Total_Days);
             this.Controls.Add(this.label22);

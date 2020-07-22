@@ -15,6 +15,7 @@ namespace Workout_Tracker_SQLite
     {
         SQLiteConnection con = new SQLiteConnection(DataAccess.ConString("Default"));
         SQLiteCommand selectWorkout = new SQLiteCommand("SELECT * from [Exercise Details]");
+        string rowID = "";
         public Workout_Details()
         {
             InitializeComponent();
@@ -221,5 +222,19 @@ namespace Workout_Tracker_SQLite
                 finally { con.Close(); }
         }
         #endregion
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            rowID = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+        }
+
+        private void btn_Delete_Click(object sender, EventArgs e)
+        {
+            SQLiteCommand cmd = new SQLiteCommand("DELETE FROM [Exercise Details] WHERE [Exercise_ID] = " + rowID, con);
+            con.Open();
+            cmd.ExecuteNonQuery();
+            con.Close();
+            loadDataGrid();
+        }
     }
 }

@@ -80,3 +80,8 @@ G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Debug\System.Buffers.xml
 G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Debug\System.Memory.xml
 G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Debug\System.Numerics.Vectors.xml
 G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\GitHub\Workout-Tracker-SQLite\bin\Debug\Workout-Tracker-SQLite.exe.manifest
+C:\GitHub\Workout-Tracker-SQLite\bin\Debug\Workout-Tracker-SQLite.application
+C:\GitHub\Workout-Tracker-SQLite\obj\Debug\Workout-Tracker-SQLite.TrustInfo.xml
+C:\GitHub\Workout-Tracker-SQLite\obj\Debug\Workout-Tracker-SQLite.exe.manifest
+C:\GitHub\Workout-Tracker-SQLite\obj\Debug\Workout-Tracker-SQLite.application

@@ -33,14 +33,14 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.cb_Person = new System.Windows.Forms.ComboBox();
-            this.btn_Filter_Person = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.cb_Exercise = new System.Windows.Forms.ComboBox();
-            this.btn_Filter_Exercise = new System.Windows.Forms.Button();
             this.btn_FilterAll = new System.Windows.Forms.Button();
             this.btn_ClearFilters = new System.Windows.Forms.Button();
-            this.groupBox_Filters = new System.Windows.Forms.GroupBox();
+            this.btn_Filter_Exercise = new System.Windows.Forms.Button();
+            this.btn_Filter_Person = new System.Windows.Forms.Button();
             this.btn_Delete = new System.Windows.Forms.Button();
+            this.groupBox_Filters = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_DailyProgress)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.groupBox_Filters.SuspendLayout();
@@ -108,17 +108,6 @@
             this.cb_Person.Size = new System.Drawing.Size(252, 32);
             this.cb_Person.TabIndex = 1;
             // 
-            // btn_Filter_Person
-            // 
-            this.btn_Filter_Person.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_Filter_Person.Location = new System.Drawing.Point(519, 3);
-            this.btn_Filter_Person.Name = "btn_Filter_Person";
-            this.btn_Filter_Person.Size = new System.Drawing.Size(252, 34);
-            this.btn_Filter_Person.TabIndex = 9;
-            this.btn_Filter_Person.Text = "Filter Person";
-            this.btn_Filter_Person.UseVisualStyleBackColor = true;
-            this.btn_Filter_Person.Click += new System.EventHandler(this.btn_Filter_Person_Click);
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -138,17 +127,6 @@
             this.cb_Exercise.Name = "cb_Exercise";
             this.cb_Exercise.Size = new System.Drawing.Size(252, 32);
             this.cb_Exercise.TabIndex = 3;
-            // 
-            // btn_Filter_Exercise
-            // 
-            this.btn_Filter_Exercise.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btn_Filter_Exercise.Location = new System.Drawing.Point(519, 43);
-            this.btn_Filter_Exercise.Name = "btn_Filter_Exercise";
-            this.btn_Filter_Exercise.Size = new System.Drawing.Size(252, 32);
-            this.btn_Filter_Exercise.TabIndex = 10;
-            this.btn_Filter_Exercise.Text = "Filter Exercise";
-            this.btn_Filter_Exercise.UseVisualStyleBackColor = true;
-            this.btn_Filter_Exercise.Click += new System.EventHandler(this.btn_Filter_Exercise_Click);
             // 
             // btn_FilterAll
             // 
@@ -172,16 +150,27 @@
             this.btn_ClearFilters.UseVisualStyleBackColor = true;
             this.btn_ClearFilters.Click += new System.EventHandler(this.btn_ClearFilters_Click);
             // 
-            // groupBox_Filters
+            // btn_Filter_Exercise
             // 
-            this.groupBox_Filters.Controls.Add(this.tableLayoutPanel1);
-            this.groupBox_Filters.Dock = System.Windows.Forms.DockStyle.Top;
-            this.groupBox_Filters.Location = new System.Drawing.Point(0, 0);
-            this.groupBox_Filters.Name = "groupBox_Filters";
-            this.groupBox_Filters.Size = new System.Drawing.Size(1300, 106);
-            this.groupBox_Filters.TabIndex = 2;
-            this.groupBox_Filters.TabStop = false;
-            this.groupBox_Filters.Text = "Data Filters";
+            this.btn_Filter_Exercise.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_Filter_Exercise.Location = new System.Drawing.Point(519, 43);
+            this.btn_Filter_Exercise.Name = "btn_Filter_Exercise";
+            this.btn_Filter_Exercise.Size = new System.Drawing.Size(252, 32);
+            this.btn_Filter_Exercise.TabIndex = 10;
+            this.btn_Filter_Exercise.Text = "Filter Exercise";
+            this.btn_Filter_Exercise.UseVisualStyleBackColor = true;
+            this.btn_Filter_Exercise.Click += new System.EventHandler(this.btn_Filter_Exercise_Click);
+            // 
+            // btn_Filter_Person
+            // 
+            this.btn_Filter_Person.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btn_Filter_Person.Location = new System.Drawing.Point(519, 3);
+            this.btn_Filter_Person.Name = "btn_Filter_Person";
+            this.btn_Filter_Person.Size = new System.Drawing.Size(252, 34);
+            this.btn_Filter_Person.TabIndex = 9;
+            this.btn_Filter_Person.Text = "Filter Person";
+            this.btn_Filter_Person.UseVisualStyleBackColor = true;
+            this.btn_Filter_Person.Click += new System.EventHandler(this.btn_Filter_Person_Click);
             // 
             // btn_Delete
             // 
@@ -193,6 +182,17 @@
             this.btn_Delete.Text = "Delete Selected Row";
             this.btn_Delete.UseVisualStyleBackColor = true;
             this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
+            // 
+            // groupBox_Filters
+            // 
+            this.groupBox_Filters.Controls.Add(this.tableLayoutPanel1);
+            this.groupBox_Filters.Dock = System.Windows.Forms.DockStyle.Top;
+            this.groupBox_Filters.Location = new System.Drawing.Point(0, 0);
+            this.groupBox_Filters.Name = "groupBox_Filters";
+            this.groupBox_Filters.Size = new System.Drawing.Size(1300, 106);
+            this.groupBox_Filters.TabIndex = 2;
+            this.groupBox_Filters.TabStop = false;
+            this.groupBox_Filters.Text = "Data Filters";
             // 
             // DataForm
             // 

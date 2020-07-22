@@ -108,9 +108,11 @@
             this.txt_Avg_Reps = new System.Windows.Forms.TextBox();
             this.txt_Total_Days = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.toolStrip1.SuspendLayout();
             this.groupBox_Reps.SuspendLayout();
             this.groupBox_Weight.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // toolStrip1
@@ -133,7 +135,7 @@
             this.btn_Refresh});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1104, 32);
+            this.toolStrip1.Size = new System.Drawing.Size(1049, 32);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -240,7 +242,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 62);
+            this.label1.Location = new System.Drawing.Point(6, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(53, 25);
             this.label1.TabIndex = 2;
@@ -248,7 +250,7 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(206, 66);
+            this.dateTimePicker1.Location = new System.Drawing.Point(199, 30);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(332, 30);
             this.dateTimePicker1.TabIndex = 3;
@@ -257,7 +259,7 @@
             // cb_Person_Name
             // 
             this.cb_Person_Name.FormattingEnabled = true;
-            this.cb_Person_Name.Location = new System.Drawing.Point(206, 102);
+            this.cb_Person_Name.Location = new System.Drawing.Point(199, 66);
             this.cb_Person_Name.Name = "cb_Person_Name";
             this.cb_Person_Name.Size = new System.Drawing.Size(332, 33);
             this.cb_Person_Name.TabIndex = 4;
@@ -266,7 +268,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 103);
+            this.label2.Location = new System.Drawing.Point(6, 67);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(74, 25);
             this.label2.TabIndex = 5;
@@ -275,7 +277,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 145);
+            this.label3.Location = new System.Drawing.Point(6, 109);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(87, 25);
             this.label3.TabIndex = 6;
@@ -284,7 +286,7 @@
             // cb_Workout_Name
             // 
             this.cb_Workout_Name.FormattingEnabled = true;
-            this.cb_Workout_Name.Location = new System.Drawing.Point(206, 142);
+            this.cb_Workout_Name.Location = new System.Drawing.Point(199, 106);
             this.cb_Workout_Name.Name = "cb_Workout_Name";
             this.cb_Workout_Name.Size = new System.Drawing.Size(332, 33);
             this.cb_Workout_Name.TabIndex = 7;
@@ -297,7 +299,7 @@
             this.chk_All_Workouts.AutoSize = true;
             this.chk_All_Workouts.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.chk_All_Workouts.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.chk_All_Workouts.Location = new System.Drawing.Point(396, 182);
+            this.chk_All_Workouts.Location = new System.Drawing.Point(389, 146);
             this.chk_All_Workouts.Name = "chk_All_Workouts";
             this.chk_All_Workouts.Size = new System.Drawing.Size(142, 29);
             this.chk_All_Workouts.TabIndex = 8;
@@ -318,7 +320,6 @@
             // groupBox_Reps
             // 
             this.groupBox_Reps.AutoSize = true;
-            this.groupBox_Reps.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.groupBox_Reps.Controls.Add(this.btn_Reps_Clone_7to8);
             this.groupBox_Reps.Controls.Add(this.btn_Reps_Clone_6to7);
             this.groupBox_Reps.Controls.Add(this.btn_Reps_Clone_5to6);
@@ -342,7 +343,7 @@
             this.groupBox_Reps.Controls.Add(this.txt_S2_Reps);
             this.groupBox_Reps.Controls.Add(this.label4);
             this.groupBox_Reps.Controls.Add(this.txt_S1_Reps);
-            this.groupBox_Reps.Location = new System.Drawing.Point(555, 36);
+            this.groupBox_Reps.Location = new System.Drawing.Point(562, 35);
             this.groupBox_Reps.Margin = new System.Windows.Forms.Padding(10);
             this.groupBox_Reps.Name = "groupBox_Reps";
             this.groupBox_Reps.Size = new System.Drawing.Size(227, 369);
@@ -862,7 +863,7 @@
             // 
             // txt_Total_Sets
             // 
-            this.txt_Total_Sets.Location = new System.Drawing.Point(206, 181);
+            this.txt_Total_Sets.Location = new System.Drawing.Point(199, 145);
             this.txt_Total_Sets.Name = "txt_Total_Sets";
             this.txt_Total_Sets.ReadOnly = true;
             this.txt_Total_Sets.Size = new System.Drawing.Size(92, 30);
@@ -871,7 +872,7 @@
             // label20
             // 
             this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(13, 257);
+            this.label20.Location = new System.Drawing.Point(6, 221);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(136, 25);
             this.label20.TabIndex = 13;
@@ -880,7 +881,7 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(13, 294);
+            this.label21.Location = new System.Drawing.Point(6, 258);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(153, 25);
             this.label21.TabIndex = 15;
@@ -888,7 +889,7 @@
             // 
             // txt_Total_Reps
             // 
-            this.txt_Total_Reps.Location = new System.Drawing.Point(206, 218);
+            this.txt_Total_Reps.Location = new System.Drawing.Point(199, 182);
             this.txt_Total_Reps.Name = "txt_Total_Reps";
             this.txt_Total_Reps.ReadOnly = true;
             this.txt_Total_Reps.Size = new System.Drawing.Size(92, 30);
@@ -897,7 +898,7 @@
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(13, 221);
+            this.label22.Location = new System.Drawing.Point(6, 185);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(106, 25);
             this.label22.TabIndex = 19;
@@ -905,7 +906,7 @@
             // 
             // txt_Avg_Weight
             // 
-            this.txt_Avg_Weight.Location = new System.Drawing.Point(206, 291);
+            this.txt_Avg_Weight.Location = new System.Drawing.Point(199, 255);
             this.txt_Avg_Weight.Name = "txt_Avg_Weight";
             this.txt_Avg_Weight.ReadOnly = true;
             this.txt_Avg_Weight.Size = new System.Drawing.Size(92, 30);
@@ -914,7 +915,7 @@
             // label23
             // 
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(13, 184);
+            this.label23.Location = new System.Drawing.Point(6, 148);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(101, 25);
             this.label23.TabIndex = 17;
@@ -922,7 +923,7 @@
             // 
             // txt_Avg_Reps
             // 
-            this.txt_Avg_Reps.Location = new System.Drawing.Point(206, 254);
+            this.txt_Avg_Reps.Location = new System.Drawing.Point(199, 218);
             this.txt_Avg_Reps.Name = "txt_Avg_Reps";
             this.txt_Avg_Reps.ReadOnly = true;
             this.txt_Avg_Reps.Size = new System.Drawing.Size(92, 30);
@@ -930,7 +931,7 @@
             // 
             // txt_Total_Days
             // 
-            this.txt_Total_Days.Location = new System.Drawing.Point(206, 327);
+            this.txt_Total_Days.Location = new System.Drawing.Point(199, 291);
             this.txt_Total_Days.Name = "txt_Total_Days";
             this.txt_Total_Days.ReadOnly = true;
             this.txt_Total_Days.Size = new System.Drawing.Size(92, 30);
@@ -939,11 +940,38 @@
             // label25
             // 
             this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(12, 330);
+            this.label25.Location = new System.Drawing.Point(5, 294);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(185, 25);
             this.label25.TabIndex = 27;
             this.label25.Text = "Total Workout Days";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.AutoSize = true;
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.label25);
+            this.groupBox1.Controls.Add(this.dateTimePicker1);
+            this.groupBox1.Controls.Add(this.txt_Total_Days);
+            this.groupBox1.Controls.Add(this.cb_Person_Name);
+            this.groupBox1.Controls.Add(this.label22);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.txt_Avg_Weight);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.label23);
+            this.groupBox1.Controls.Add(this.cb_Workout_Name);
+            this.groupBox1.Controls.Add(this.txt_Avg_Reps);
+            this.groupBox1.Controls.Add(this.chk_All_Workouts);
+            this.groupBox1.Controls.Add(this.label21);
+            this.groupBox1.Controls.Add(this.txt_Total_Sets);
+            this.groupBox1.Controls.Add(this.txt_Total_Reps);
+            this.groupBox1.Controls.Add(this.label20);
+            this.groupBox1.Location = new System.Drawing.Point(12, 35);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(537, 370);
+            this.groupBox1.TabIndex = 28;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Personal Details";
             // 
             // LandingForm
             // 
@@ -951,26 +979,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(1104, 524);
-            this.Controls.Add(this.label25);
-            this.Controls.Add(this.txt_Total_Days);
-            this.Controls.Add(this.label22);
-            this.Controls.Add(this.txt_Avg_Weight);
-            this.Controls.Add(this.label23);
-            this.Controls.Add(this.txt_Avg_Reps);
-            this.Controls.Add(this.label21);
-            this.Controls.Add(this.txt_Total_Reps);
-            this.Controls.Add(this.label20);
-            this.Controls.Add(this.txt_Total_Sets);
+            this.ClientSize = new System.Drawing.Size(1049, 542);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox_Weight);
             this.Controls.Add(this.groupBox_Reps);
-            this.Controls.Add(this.chk_All_Workouts);
-            this.Controls.Add(this.cb_Workout_Name);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.cb_Person_Name);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.toolStrip1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -985,6 +997,8 @@
             this.groupBox_Reps.PerformLayout();
             this.groupBox_Weight.ResumeLayout(false);
             this.groupBox_Weight.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1070,6 +1084,7 @@
         private System.Windows.Forms.Button btn_Weight_Clone_1to2;
         private System.Windows.Forms.TextBox txt_Total_Days;
         private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
 

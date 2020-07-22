@@ -11,10 +11,12 @@ using System.Windows.Forms;
 
 namespace Workout_Tracker_SQLite
 {
+    
     public partial class Personal_Details : Form
     {
         SQLiteConnection con = new SQLiteConnection(DataAccess.ConString("Default"));
-        SQLiteCommand selectPerson = new SQLiteCommand("SELECT * from [Person]");
+        SQLiteCommand cmd = new SQLiteCommand("SELECT * from [Person]");
+        string rowID = "";
         public Personal_Details()
         {
             InitializeComponent();
@@ -28,15 +30,15 @@ namespace Workout_Tracker_SQLite
         private void loadDataGrid()
         {
             try
-                {
-                    selectPerson.Connection = con;
+            {
+                cmd.Connection = con;
                     con.Open();
-                    SQLiteDataReader dr = selectPerson.ExecuteReader();
+                    SQLiteDataReader dr = cmd.ExecuteReader();
                     DataTable dt = new DataTable();
                     dt.Load(dr);
                     con.Close();
                     dataGridView1.DataSource = dt;
-                }
+        }
             catch (Exception E)
                 {
                     con.Close();
@@ -59,6 +61,7 @@ namespace Workout_Tracker_SQLite
 
                 txt_Full_Name.Text = "";
                 dateTimePicker1.Value = System.DateTime.Now;
+                loadDataGrid();
             }
             catch (Exception E) { MessageBox.Show(E.Message); }
             finally { con.Close(); }
@@ -66,6 +69,20 @@ namespace Workout_Tracker_SQLite
 
         private void btn_Refresh_Click(object sender, EventArgs e)
         {
+            loadDataGrid();
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            rowID = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+        }
+
+        private void btn_Delete_Click(object sender, EventArgs e)
+        {
+            SQLiteCommand cmd = new SQLiteCommand("DELETE FROM [Person] WHERE [Person_ID] = " + rowID, con);
+            con.Open();
+            cmd.ExecuteNonQuery();
+            con.Close();
             loadDataGrid();
         }
     }

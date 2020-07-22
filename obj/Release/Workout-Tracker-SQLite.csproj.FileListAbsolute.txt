@@ -66,7 +66,6 @@ C:\GitHub\Workout-Tracker-SQLite\bin\Release\System.Runtime.CompilerServices.Uns
 C:\GitHub\Workout-Tracker-SQLite\bin\Release\System.Security.AccessControl.xml
 C:\GitHub\Workout-Tracker-SQLite\bin\Release\System.Security.Permissions.xml
 C:\GitHub\Workout-Tracker-SQLite\bin\Release\System.Security.Principal.Windows.xml
-C:\GitHub\Workout-Tracker-SQLite\obj\Release\Workout-Tracker-SQLite.csprojAssemblyReference.cache
 C:\GitHub\Workout-Tracker-SQLite\obj\Release\Workout_Tracker_SQLite.DataForm.resources
 C:\GitHub\Workout-Tracker-SQLite\obj\Release\Workout_Tracker_SQLite.LandingForm.resources
 C:\GitHub\Workout-Tracker-SQLite\obj\Release\Workout_Tracker_SQLite.Personal_Details.resources
@@ -79,3 +78,8 @@ C:\GitHub\Workout-Tracker-SQLite\obj\Release\Workout-Tracker-SQLite.csproj.CoreC
 C:\GitHub\Workout-Tracker-SQLite\obj\Release\Workout-Tracker-SQLite.csproj.CopyComplete
 C:\GitHub\Workout-Tracker-SQLite\obj\Release\Workout-Tracker-SQLite.exe
 C:\GitHub\Workout-Tracker-SQLite\obj\Release\Workout-Tracker-SQLite.pdb
+C:\GitHub\Workout-Tracker-SQLite\bin\Release\Workout-Tracker-SQLite.exe.manifest
+C:\GitHub\Workout-Tracker-SQLite\bin\Release\Workout-Tracker-SQLite.application
+C:\GitHub\Workout-Tracker-SQLite\obj\Release\Workout-Tracker-SQLite.TrustInfo.xml
+C:\GitHub\Workout-Tracker-SQLite\obj\Release\Workout-Tracker-SQLite.exe.manifest
+C:\GitHub\Workout-Tracker-SQLite\obj\Release\Workout-Tracker-SQLite.application

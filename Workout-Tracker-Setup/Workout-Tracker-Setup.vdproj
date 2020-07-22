@@ -1586,6 +1586,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
         "Release"
@@ -5558,7 +5566,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Workout Tracker"
         "ProductCode" = "8:{C86779FF-8544-4A71-97F8-27955E4F7E58}"
-        "PackageCode" = "8:{FC2C9575-4CC9-450D-96E1-C57A4F02DBDB}"
+        "PackageCode" = "8:{9444BCD4-84EC-40D8-BCCE-9CBE2EC9FAC9}"
         "UpgradeCode" = "8:{AD451A29-9EA6-4502-8C50-0FBDD8DB227E}"
         "AspNetVersion" = "8:2.0.50727.0"
         "RestartWWWService" = "11:FALSE"
@@ -5575,7 +5583,7 @@
         "Keywords" = "8:"
         "ARPCOMMENTS" = "8:"
         "ARPURLINFOABOUT" = "8:"
-        "ARPPRODUCTICON" = "8:"
+        "ARPPRODUCTICON" = "8:_271B342BFCCD4A69BCDB7A6FD59D02FF"
         "ARPIconIndex" = "3:0"
         "SearchPath" = "8:"
         "UseSystemSearchPath" = "11:TRUE"

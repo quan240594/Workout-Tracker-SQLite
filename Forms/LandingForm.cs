@@ -261,7 +261,11 @@ namespace Workout_Tracker_SQLite
                     txt_S1_Reps.Text = "0";
                 }
             }
-            catch (Exception) { txt_S1_Reps.Text = "0"; }
+            catch (Exception) 
+            { 
+                txt_S1_Reps.Text = "0";
+                txt_S1_Reps.SelectAll();
+            }
         }
 
         private void txt_S2_Reps_TextChanged(object sender, EventArgs e)
@@ -279,7 +283,11 @@ namespace Workout_Tracker_SQLite
                     txt_S2_Reps.Text = "0";
                 }
             }
-            catch (Exception) { txt_S2_Reps.Text = "0"; }
+            catch (Exception) 
+            { 
+                txt_S2_Reps.Text = "0";
+                txt_S2_Reps.SelectAll();
+            }
         }
         
         private void txt_S3_Reps_TextChanged(object sender, EventArgs e)
@@ -297,7 +305,11 @@ namespace Workout_Tracker_SQLite
                     txt_S3_Reps.Text = "0";
                 }
             }
-            catch (Exception) { txt_S3_Reps.Text = "0"; }
+            catch (Exception) 
+            { 
+                txt_S3_Reps.Text = "0";
+                txt_S3_Reps.SelectAll();
+            }
         }
 
         private void txt_S4_Reps_TextChanged(object sender, EventArgs e)
@@ -315,7 +327,11 @@ namespace Workout_Tracker_SQLite
                     txt_S4_Reps.Text = "0";
                 }
             }
-            catch (Exception) { txt_S4_Reps.Text = "0"; }
+            catch (Exception) 
+            { 
+                txt_S4_Reps.Text = "0";
+                txt_S4_Reps.SelectAll();
+            }
         }
 
         private void txt_S5_Reps_TextChanged(object sender, EventArgs e)
@@ -333,7 +349,11 @@ namespace Workout_Tracker_SQLite
                     txt_S5_Reps.Text = "0";
                 }
             }
-            catch (Exception) { txt_S5_Reps.Text = "0"; }
+            catch (Exception) 
+            { 
+                txt_S5_Reps.Text = "0";
+                txt_S5_Reps.SelectAll();
+            }
         }
 
         private void txt_S6_Reps_TextChanged(object sender, EventArgs e)
@@ -351,7 +371,11 @@ namespace Workout_Tracker_SQLite
                     txt_S6_Reps.Text = "0";
                 }
             }
-            catch (Exception) { txt_S6_Reps.Text = "0"; }
+            catch (Exception) 
+            { 
+                txt_S6_Reps.Text = "0";
+                txt_S6_Reps.SelectAll();
+            }
         }
 
         private void txt_S7_Reps_TextChanged(object sender, EventArgs e)
@@ -369,7 +393,11 @@ namespace Workout_Tracker_SQLite
                     txt_S7_Reps.Text = "0";
                 }
             }
-            catch (Exception) { txt_S7_Reps.Text = "0"; }
+            catch (Exception) 
+            { 
+                txt_S7_Reps.Text = "0";
+                txt_S7_Reps.SelectAll();
+            }
         }
 
         private void txt_S8_Reps_TextChanged(object sender, EventArgs e)
@@ -382,7 +410,11 @@ namespace Workout_Tracker_SQLite
                     }
                 else { txt_S8_Reps.Text = "0"; }
             }
-            catch (Exception) { txt_S8_Reps.Text = "0"; }
+            catch (Exception) 
+            { 
+                txt_S8_Reps.Text = "0";
+                txt_S8_Reps.SelectAll();
+            }
         }
 
         private void txt_S1_Weight_TextChanged(object sender, EventArgs e)
@@ -400,7 +432,11 @@ namespace Workout_Tracker_SQLite
                     txt_S1_Weight.Text = "0";
                 }
             }
-            catch (Exception) { txt_S1_Weight.Text = "0"; }
+            catch (Exception) 
+            { 
+                txt_S1_Weight.Text = "0";
+                txt_S1_Weight.SelectAll();
+            }
         }
 
         private void txt_S2_Weight_TextChanged(object sender, EventArgs e)
@@ -418,7 +454,11 @@ namespace Workout_Tracker_SQLite
                     txt_S2_Weight.Text = "0";
                 }
             }
-            catch (Exception) { txt_S2_Weight.Text = "0"; }
+            catch (Exception) 
+            { 
+                txt_S2_Weight.Text = "0";
+                txt_S2_Weight.SelectAll();
+            }
         }
 
         private void txt_S3_Weight_TextChanged(object sender, EventArgs e)
@@ -436,7 +476,11 @@ namespace Workout_Tracker_SQLite
                     txt_S3_Weight.Text = "0";
                 }
             }
-            catch (Exception) { txt_S3_Weight.Text = "0"; }
+            catch (Exception) 
+            { 
+                txt_S3_Weight.Text = "0";
+                txt_S3_Weight.SelectAll();
+            }
         }
 
         private void txt_S4_Weight_TextChanged(object sender, EventArgs e)
@@ -454,7 +498,11 @@ namespace Workout_Tracker_SQLite
                     txt_S4_Weight.Text = "0";
                 }
             }
-            catch (Exception) { txt_S4_Weight.Text = "0"; }
+            catch (Exception) 
+            { 
+                txt_S4_Weight.Text = "0";
+                txt_S4_Weight.SelectAll();
+            }
         }
 
         private void txt_S5_Weight_TextChanged(object sender, EventArgs e)
@@ -472,7 +520,11 @@ namespace Workout_Tracker_SQLite
                     txt_S5_Weight.Text = "0";
                 }
             }
-            catch (Exception) { txt_S5_Weight.Text = "0"; }
+            catch (Exception) 
+            { 
+                txt_S5_Weight.Text = "0";
+                txt_S5_Weight.SelectAll();
+            }
         }
 
         private void txt_S6_Weight_TextChanged(object sender, EventArgs e)
@@ -490,7 +542,11 @@ namespace Workout_Tracker_SQLite
                     txt_S6_Weight.Text = "0";
                 }
             }
-            catch (Exception) { txt_S6_Weight.Text = "0"; }
+            catch (Exception) 
+            { 
+                txt_S6_Weight.Text = "0";
+                txt_S6_Weight.SelectAll();
+            }
         }
 
         private void txt_S7_Weight_TextChanged(object sender, EventArgs e)
@@ -508,7 +564,11 @@ namespace Workout_Tracker_SQLite
                     txt_S7_Weight.Text = "0";
                 }
             }
-            catch (Exception) { txt_S7_Weight.Text = "0"; }
+            catch (Exception) 
+            { 
+                txt_S7_Weight.Text = "0";
+                txt_S7_Weight.SelectAll();
+            }
         }       
 
         private void txt_S8_Weight_TextChanged(object sender, EventArgs e)
@@ -521,7 +581,11 @@ namespace Workout_Tracker_SQLite
                 }
                 else { txt_S8_Weight.Text = "0"; }
             }
-            catch (Exception) { txt_S8_Weight.Text = "0"; }
+            catch (Exception) 
+            { 
+                txt_S8_Weight.Text = "0";
+                txt_S8_Weight.SelectAll();
+            }
         }
         private void txt_S1_Reps_Click(object sender, EventArgs e)
         {

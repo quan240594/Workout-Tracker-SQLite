@@ -242,22 +242,8 @@ namespace Workout_Tracker_SQLite
         private void cb_Workout_Name_SelectionChangeCommitted(object sender, EventArgs e)
         {
             txt_S1_Reps.Enabled = true;
-            txt_S2_Reps.Enabled = false;
-            txt_S3_Reps.Enabled = false;
-            txt_S4_Reps.Enabled = false;
-            txt_S5_Reps.Enabled = false;
-            txt_S6_Reps.Enabled = false;
-            txt_S7_Reps.Enabled = false;
-            txt_S8_Reps.Enabled = false;
 
             txt_S1_Weight.Enabled = true;
-            txt_S2_Weight.Enabled = false;
-            txt_S3_Weight.Enabled = false;
-            txt_S4_Weight.Enabled = false;
-            txt_S5_Weight.Enabled = false;
-            txt_S6_Weight.Enabled = false;
-            txt_S7_Weight.Enabled = false;
-            txt_S8_Weight.Enabled = false;
         }
 
         private void txt_S1_Reps_TextChanged(object sender, EventArgs e)

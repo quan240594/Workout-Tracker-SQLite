@@ -10,7 +10,7 @@
        <Types>
         <Type Name="DataAccess" Kind="Class" Accessibility="Assembly" ExternallyVisible="False">
          <Messages>
-          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2020-07-22 13:45:16Z" FixCategory="NonBreaking">
+          <Message TypeName="TypesThatOwnDisposableFieldsShouldBeDisposable" Category="Microsoft.Design" CheckId="CA1001" Status="Active" Created="2020-07-24 06:40:15Z" FixCategory="NonBreaking">
            <Issue Name="NonBreaking" Certainty="95" Level="CriticalError">Implement IDisposable on 'DataAccess' because it creates members of the following IDisposable types: 'SQLiteConnection'.</Issue>
           </Message>
          </Messages>
@@ -19,35 +19,35 @@
          <Members>
           <Member Name="#btn_Delete_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2020-07-22 13:45:16Z" FixCategory="DependsOnFix">
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2020-07-24 06:40:15Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\GitHub\Workout-Tracker-SQLite\Forms" File="DataForm.cs" Line="153">The query string passed to 'SQLiteCommand.SQLiteCommand(string, SQLiteConnection)' in 'DataForm.btn_Delete_Click(object, EventArgs)' could contain the following variables 'this.rowID'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#btn_Filter_Exercise_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2020-07-22 13:45:16Z" FixCategory="DependsOnFix">
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2020-07-24 06:40:15Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\GitHub\Workout-Tracker-SQLite\Forms" File="DataForm.cs" Line="113">The query string passed to 'SQLiteCommand.SQLiteCommand(string, SQLiteConnection)' in 'DataForm.btn_Filter_Exercise_Click(object, EventArgs)' could contain the following variables 'this.gridQuery', 'this.gQuery_Exercise_Filter', 'base.ToString()', 'this.orderQuery'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#btn_Filter_Person_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2020-07-22 13:45:16Z" FixCategory="DependsOnFix">
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2020-07-24 06:40:15Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\GitHub\Workout-Tracker-SQLite\Forms" File="DataForm.cs" Line="99">The query string passed to 'SQLiteCommand.SQLiteCommand(string, SQLiteConnection)' in 'DataForm.btn_Filter_Person_Click(object, EventArgs)' could contain the following variables 'this.gridQuery', 'this.gQuery_Person_Filter', 'base.ToString()', 'this.orderQuery'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#btn_FilterAll_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2020-07-22 13:45:16Z" FixCategory="DependsOnFix">
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2020-07-24 06:40:15Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\GitHub\Workout-Tracker-SQLite\Forms" File="DataForm.cs" Line="135">The query string passed to 'SQLiteCommand.SQLiteCommand(string, SQLiteConnection)' in 'DataForm.btn_FilterAll_Click(object, EventArgs)' could contain the following variables 'this.gridQuery', 'this.gQuery_Person_Filter', 'base.ToString()', 'this.gQuery_Exercise_Filter', 'base.ToString()', 'this.orderQuery'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#gridLoad()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2020-07-22 13:45:16Z" FixCategory="DependsOnFix">
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2020-07-24 06:40:15Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\GitHub\Workout-Tracker-SQLite\Forms" File="DataForm.cs" Line="51">The query string passed to 'SQLiteCommand.SQLiteCommand(string, SQLiteConnection)' in 'DataForm.gridLoad()' could contain the following variables 'this.gridQuery', 'this.orderQuery'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
@@ -58,28 +58,28 @@
          <Members>
           <Member Name="#btn_Save_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2020-07-22 13:45:16Z" FixCategory="DependsOnFix">
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2020-07-24 06:40:15Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\GitHub\Workout-Tracker-SQLite\Forms" File="LandingForm.cs" Line="120">The query string passed to 'SQLiteCommand.SQLiteCommand(string, SQLiteConnection)' in 'LandingForm.btn_Save_Click(object, EventArgs)' could contain the following variables 'base.ToString()', 'this.cb_Person_Name.SelectedValue'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#calcTotalWorkoutDays()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2020-07-22 13:45:16Z" FixCategory="DependsOnFix">
-             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\GitHub\Workout-Tracker-SQLite\Forms" File="LandingForm.cs" Line="775">The query string passed to 'SQLiteCommand.SQLiteCommand(string)' in 'LandingForm.calcTotalWorkoutDays()' could contain the following variables 'this.cb_Person_Name.SelectedValue'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2020-07-24 06:40:15Z" FixCategory="DependsOnFix">
+             <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\GitHub\Workout-Tracker-SQLite\Forms" File="LandingForm.cs" Line="761">The query string passed to 'SQLiteCommand.SQLiteCommand(string)' in 'LandingForm.calcTotalWorkoutDays()' could contain the following variables 'this.cb_Person_Name.SelectedValue'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#Dispose(System.Boolean)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
            <Messages>
-            <Message Id="cn" TypeName="DisposableFieldsShouldBeDisposed" Category="Microsoft.Usage" CheckId="CA2213" Status="Active" Created="2020-07-22 13:45:16Z" FixCategory="NonBreaking">
+            <Message Id="cn" TypeName="DisposableFieldsShouldBeDisposed" Category="Microsoft.Usage" CheckId="CA2213" Status="Active" Created="2020-07-24 06:40:15Z" FixCategory="NonBreaking">
              <Issue Certainty="75" Level="Warning" Path="C:\GitHub\Workout-Tracker-SQLite\Forms" File="LandingForm.Designer.cs" Line="16">'LandingForm' contains field 'LandingForm.cn' that is of IDisposable type: 'IDbConnection'. Change the Dispose method on 'LandingForm' to call Dispose or Close on this field.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#filter_CB_Workout()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2020-07-22 13:45:16Z" FixCategory="DependsOnFix">
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2020-07-24 06:40:15Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\GitHub\Workout-Tracker-SQLite\Forms" File="LandingForm.cs" Line="95">The query string passed to 'SQLiteCommand.SQLiteCommand(string, SQLiteConnection)' in 'LandingForm.filter_CB_Workout()' could contain the following variables 'this.wd', 'this.wd'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
@@ -90,7 +90,7 @@
          <Members>
           <Member Name="#btn_Delete_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2020-07-22 13:45:16Z" FixCategory="DependsOnFix">
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2020-07-24 06:40:15Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\GitHub\Workout-Tracker-SQLite\Forms" File="Personal_Details.cs" Line="82">The query string passed to 'SQLiteCommand.SQLiteCommand(string, SQLiteConnection)' in 'Personal_Details.btn_Delete_Click(object, EventArgs)' could contain the following variables 'this.rowID'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
@@ -101,7 +101,7 @@
          <Members>
           <Member Name="#todayWorkout()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2020-07-22 13:45:16Z" FixCategory="DependsOnFix">
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2020-07-24 06:40:15Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\GitHub\Workout-Tracker-SQLite\Forms" File="Schedule.cs" Line="28">The query string passed to 'SQLiteCommand.SQLiteCommand(string)' in 'Schedule.todayWorkout()' could contain the following variables 'this.wd', 'this.wd'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
@@ -112,21 +112,21 @@
          <Members>
           <Member Name="#cb_Person_Name_SelectionChangeCommitted(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2020-07-22 13:45:16Z" FixCategory="DependsOnFix">
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2020-07-24 06:40:15Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\GitHub\Workout-Tracker-SQLite\Forms" File="Chart_Form.cs" Line="176">The query string passed to 'SQLiteCommand.SQLiteCommand(string, SQLiteConnection)' in 'Visualization.cb_Person_Name_SelectionChangeCommitted(object, EventArgs)' could contain the following variables 'this.cb_Person_Name.SelectedValue'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#Dispose(System.Boolean)" Kind="Method" Static="False" Accessibility="Family" ExternallyVisible="True">
            <Messages>
-            <Message Id="cn" TypeName="DisposableFieldsShouldBeDisposed" Category="Microsoft.Usage" CheckId="CA2213" Status="Active" Created="2020-07-22 13:45:16Z" FixCategory="NonBreaking">
+            <Message Id="cn" TypeName="DisposableFieldsShouldBeDisposed" Category="Microsoft.Usage" CheckId="CA2213" Status="Active" Created="2020-07-24 06:40:15Z" FixCategory="NonBreaking">
              <Issue Certainty="75" Level="Warning" Path="C:\GitHub\Workout-Tracker-SQLite\Forms" File="Chart_Form.Designer.cs" Line="16">'Visualization' contains field 'Visualization.cn' that is of IDisposable type: 'IDbConnection'. Change the Dispose method on 'Visualization' to call Dispose or Close on this field.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#loadChart()" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2020-07-22 13:45:16Z" FixCategory="DependsOnFix">
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2020-07-24 06:40:15Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\GitHub\Workout-Tracker-SQLite\Forms" File="Chart_Form.cs" Line="91">The query string passed to 'SQLiteCommand.SQLiteCommand(string, SQLiteConnection)' in 'Visualization.loadChart()' could contain the following variables 'this.baseQuery', 'this.eFilter', 'this.eID', 'this.pFilter', 'this.pID', 'this.dateOrder'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>
@@ -137,7 +137,7 @@
          <Members>
           <Member Name="#btn_Delete_Click(System.Object,System.EventArgs)" Kind="Method" Static="False" Accessibility="Private" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2020-07-22 13:45:16Z" FixCategory="DependsOnFix">
+            <Message TypeName="Review SQL queries for security vulnerabilities" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2020-07-24 06:40:15Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="C:\GitHub\Workout-Tracker-SQLite\Forms" File="Workout_Details.cs" Line="233">The query string passed to 'SQLiteCommand.SQLiteCommand(string, SQLiteConnection)' in 'Workout_Details.btn_Delete_Click(object, EventArgs)' could contain the following variables 'this.rowID'. If any of these variables could come from user input, consider using a stored procedure or a parameterized SQL query instead of building the query with string concatenations.</Issue>
             </Message>
            </Messages>

@@ -1,32 +1,3 @@
-C:\GitHub\Workout-Tracker-SQLite\obj\Debug\Workout-Tracker-SQLite.csprojAssemblyReference.cache
-C:\GitHub\Workout-Tracker-SQLite\obj\Debug\Workout_Tracker_SQLite.LandingForm.resources
-C:\GitHub\Workout-Tracker-SQLite\obj\Debug\Workout_Tracker_SQLite.Properties.Resources.resources
-C:\GitHub\Workout-Tracker-SQLite\obj\Debug\Workout-Tracker-SQLite.csproj.GenerateResource.cache
-C:\GitHub\Workout-Tracker-SQLite\obj\Debug\Workout-Tracker-SQLite.csproj.CoreCompileInputs.cache
-C:\GitHub\Workout-Tracker-SQLite\bin\Debug\Workout-Tracker-SQLite.exe.config
-C:\GitHub\Workout-Tracker-SQLite\bin\Debug\Workout-Tracker-SQLite.exe
-C:\GitHub\Workout-Tracker-SQLite\bin\Debug\Workout-Tracker-SQLite.pdb
-C:\GitHub\Workout-Tracker-SQLite\bin\Debug\Dapper.dll
-C:\GitHub\Workout-Tracker-SQLite\bin\Debug\System.Configuration.ConfigurationManager.dll
-C:\GitHub\Workout-Tracker-SQLite\bin\Debug\System.Data.SQLite.dll
-C:\GitHub\Workout-Tracker-SQLite\bin\Debug\System.Security.AccessControl.dll
-C:\GitHub\Workout-Tracker-SQLite\bin\Debug\System.Security.Permissions.dll
-C:\GitHub\Workout-Tracker-SQLite\bin\Debug\System.Security.Principal.Windows.dll
-C:\GitHub\Workout-Tracker-SQLite\bin\Debug\Dapper.xml
-C:\GitHub\Workout-Tracker-SQLite\bin\Debug\System.Configuration.ConfigurationManager.xml
-C:\GitHub\Workout-Tracker-SQLite\bin\Debug\System.Data.SQLite.xml
-C:\GitHub\Workout-Tracker-SQLite\bin\Debug\System.Data.SQLite.dll.config
-C:\GitHub\Workout-Tracker-SQLite\bin\Debug\System.Security.AccessControl.xml
-C:\GitHub\Workout-Tracker-SQLite\bin\Debug\System.Security.Permissions.xml
-C:\GitHub\Workout-Tracker-SQLite\bin\Debug\System.Security.Principal.Windows.xml
-C:\GitHub\Workout-Tracker-SQLite\obj\Debug\Workout-Tracker-SQLite.csproj.CopyComplete
-C:\GitHub\Workout-Tracker-SQLite\obj\Debug\Workout-Tracker-SQLite.exe
-C:\GitHub\Workout-Tracker-SQLite\obj\Debug\Workout-Tracker-SQLite.pdb
-C:\GitHub\Workout-Tracker-SQLite\obj\Debug\Workout_Tracker_SQLite.DataForm.resources
-C:\GitHub\Workout-Tracker-SQLite\obj\Debug\Workout_Tracker_SQLite.Personal_Details.resources
-C:\GitHub\Workout-Tracker-SQLite\obj\Debug\Workout_Tracker_SQLite.Schedule.resources
-C:\GitHub\Workout-Tracker-SQLite\obj\Debug\Workout_Tracker_SQLite.Visualization.resources
-C:\GitHub\Workout-Tracker-SQLite\obj\Debug\Workout_Tracker_SQLite.Workout_Details.resources
 G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Debug\Workout-Tracker-SQLite.exe.config
 G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Debug\Workout-Tracker-SQLite.exe
 G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Debug\Workout-Tracker-SQLite.pdb
@@ -57,18 +28,6 @@ G:\Programming\GitHub Repo\Workout-Tracker-SQLite\obj\Debug\Workout-Tracker-SQLi
 G:\Programming\GitHub Repo\Workout-Tracker-SQLite\obj\Debug\Workout-Tracker-SQLite.exe
 G:\Programming\GitHub Repo\Workout-Tracker-SQLite\obj\Debug\Workout-Tracker-SQLite.pdb
 G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Debug\Workout_Tracker_SQLite_DB.db
-C:\GitHub\Workout-Tracker-SQLite\bin\Debug\Workout_Tracker_SQLite_DB.db
-C:\GitHub\Workout-Tracker-SQLite\bin\Debug\Microsoft.Data.Sqlite.dll
-C:\GitHub\Workout-Tracker-SQLite\bin\Debug\SQLitePCLRaw.core.dll
-C:\GitHub\Workout-Tracker-SQLite\bin\Debug\System.Buffers.dll
-C:\GitHub\Workout-Tracker-SQLite\bin\Debug\System.Memory.dll
-C:\GitHub\Workout-Tracker-SQLite\bin\Debug\System.Numerics.Vectors.dll
-C:\GitHub\Workout-Tracker-SQLite\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
-C:\GitHub\Workout-Tracker-SQLite\bin\Debug\Microsoft.Data.Sqlite.xml
-C:\GitHub\Workout-Tracker-SQLite\bin\Debug\System.Buffers.xml
-C:\GitHub\Workout-Tracker-SQLite\bin\Debug\System.Memory.xml
-C:\GitHub\Workout-Tracker-SQLite\bin\Debug\System.Numerics.Vectors.xml
-C:\GitHub\Workout-Tracker-SQLite\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Debug\Microsoft.Data.Sqlite.dll
 G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Debug\SQLitePCLRaw.core.dll
 G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Debug\System.Buffers.dll
@@ -80,8 +39,48 @@ G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Debug\System.Buffers.xml
 G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Debug\System.Memory.xml
 G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Debug\System.Numerics.Vectors.xml
 G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
-C:\GitHub\Workout-Tracker-SQLite\bin\Debug\Workout-Tracker-SQLite.exe.manifest
-C:\GitHub\Workout-Tracker-SQLite\bin\Debug\Workout-Tracker-SQLite.application
-C:\GitHub\Workout-Tracker-SQLite\obj\Debug\Workout-Tracker-SQLite.TrustInfo.xml
-C:\GitHub\Workout-Tracker-SQLite\obj\Debug\Workout-Tracker-SQLite.exe.manifest
-C:\GitHub\Workout-Tracker-SQLite\obj\Debug\Workout-Tracker-SQLite.application
+C:\GitHub\Workout-Tracker-SQLite\bin\Debug\Workout_Tracker_SQLite_DB.db
+C:\GitHub\Workout-Tracker-SQLite\bin\Debug\Workout Tracker.exe.config
+C:\GitHub\Workout-Tracker-SQLite\bin\Debug\Workout Tracker.exe.manifest
+C:\GitHub\Workout-Tracker-SQLite\bin\Debug\Workout Tracker.application
+C:\GitHub\Workout-Tracker-SQLite\bin\Debug\Workout Tracker.exe
+C:\GitHub\Workout-Tracker-SQLite\bin\Debug\Workout Tracker.pdb
+C:\GitHub\Workout-Tracker-SQLite\bin\Debug\Dapper.dll
+C:\GitHub\Workout-Tracker-SQLite\bin\Debug\Microsoft.Data.Sqlite.dll
+C:\GitHub\Workout-Tracker-SQLite\bin\Debug\SQLitePCLRaw.core.dll
+C:\GitHub\Workout-Tracker-SQLite\bin\Debug\System.Buffers.dll
+C:\GitHub\Workout-Tracker-SQLite\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\GitHub\Workout-Tracker-SQLite\bin\Debug\System.Data.SQLite.dll
+C:\GitHub\Workout-Tracker-SQLite\bin\Debug\System.Memory.dll
+C:\GitHub\Workout-Tracker-SQLite\bin\Debug\System.Numerics.Vectors.dll
+C:\GitHub\Workout-Tracker-SQLite\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\GitHub\Workout-Tracker-SQLite\bin\Debug\System.Security.AccessControl.dll
+C:\GitHub\Workout-Tracker-SQLite\bin\Debug\System.Security.Permissions.dll
+C:\GitHub\Workout-Tracker-SQLite\bin\Debug\System.Security.Principal.Windows.dll
+C:\GitHub\Workout-Tracker-SQLite\bin\Debug\Dapper.xml
+C:\GitHub\Workout-Tracker-SQLite\bin\Debug\Microsoft.Data.Sqlite.xml
+C:\GitHub\Workout-Tracker-SQLite\bin\Debug\System.Buffers.xml
+C:\GitHub\Workout-Tracker-SQLite\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\GitHub\Workout-Tracker-SQLite\bin\Debug\System.Data.SQLite.xml
+C:\GitHub\Workout-Tracker-SQLite\bin\Debug\System.Data.SQLite.dll.config
+C:\GitHub\Workout-Tracker-SQLite\bin\Debug\System.Memory.xml
+C:\GitHub\Workout-Tracker-SQLite\bin\Debug\System.Numerics.Vectors.xml
+C:\GitHub\Workout-Tracker-SQLite\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\GitHub\Workout-Tracker-SQLite\bin\Debug\System.Security.AccessControl.xml
+C:\GitHub\Workout-Tracker-SQLite\bin\Debug\System.Security.Permissions.xml
+C:\GitHub\Workout-Tracker-SQLite\bin\Debug\System.Security.Principal.Windows.xml
+C:\GitHub\Workout-Tracker-SQLite\obj\Debug\Workout_Tracker_SQLite.DataForm.resources
+C:\GitHub\Workout-Tracker-SQLite\obj\Debug\Workout_Tracker_SQLite.LandingForm.resources
+C:\GitHub\Workout-Tracker-SQLite\obj\Debug\Workout_Tracker_SQLite.Personal_Details.resources
+C:\GitHub\Workout-Tracker-SQLite\obj\Debug\Workout_Tracker_SQLite.Properties.Resources.resources
+C:\GitHub\Workout-Tracker-SQLite\obj\Debug\Workout_Tracker_SQLite.Schedule.resources
+C:\GitHub\Workout-Tracker-SQLite\obj\Debug\Workout_Tracker_SQLite.Visualization.resources
+C:\GitHub\Workout-Tracker-SQLite\obj\Debug\Workout_Tracker_SQLite.Workout_Details.resources
+C:\GitHub\Workout-Tracker-SQLite\obj\Debug\Workout-Tracker-SQLite.csproj.GenerateResource.cache
+C:\GitHub\Workout-Tracker-SQLite\obj\Debug\Workout-Tracker-SQLite.csproj.CoreCompileInputs.cache
+C:\GitHub\Workout-Tracker-SQLite\obj\Debug\Workout Tracker.TrustInfo.xml
+C:\GitHub\Workout-Tracker-SQLite\obj\Debug\Workout Tracker.exe.manifest
+C:\GitHub\Workout-Tracker-SQLite\obj\Debug\Workout Tracker.application
+C:\GitHub\Workout-Tracker-SQLite\obj\Debug\Workout-Tracker-SQLite.csproj.CopyComplete
+C:\GitHub\Workout-Tracker-SQLite\obj\Debug\Workout Tracker.exe
+C:\GitHub\Workout-Tracker-SQLite\obj\Debug\Workout Tracker.pdb

@@ -1,20 +1,13 @@
-G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Debug\Workout-Tracker-SQLite.exe.config
-G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Debug\Workout-Tracker-SQLite.exe
-G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Debug\Workout-Tracker-SQLite.pdb
 G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Debug\Dapper.dll
 G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Debug\System.Configuration.ConfigurationManager.dll
-G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Debug\System.Data.SQLite.dll
 G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Debug\System.Security.AccessControl.dll
 G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Debug\System.Security.Permissions.dll
 G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Debug\System.Security.Principal.Windows.dll
 G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Debug\Dapper.xml
 G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Debug\System.Configuration.ConfigurationManager.xml
-G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Debug\System.Data.SQLite.xml
-G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Debug\System.Data.SQLite.dll.config
 G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Debug\System.Security.AccessControl.xml
 G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Debug\System.Security.Permissions.xml
 G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Debug\System.Security.Principal.Windows.xml
-G:\Programming\GitHub Repo\Workout-Tracker-SQLite\obj\Debug\Workout-Tracker-SQLite.csprojAssemblyReference.cache
 G:\Programming\GitHub Repo\Workout-Tracker-SQLite\obj\Debug\Workout_Tracker_SQLite.DataForm.resources
 G:\Programming\GitHub Repo\Workout-Tracker-SQLite\obj\Debug\Workout_Tracker_SQLite.LandingForm.resources
 G:\Programming\GitHub Repo\Workout-Tracker-SQLite\obj\Debug\Workout_Tracker_SQLite.Personal_Details.resources
@@ -25,8 +18,6 @@ G:\Programming\GitHub Repo\Workout-Tracker-SQLite\obj\Debug\Workout_Tracker_SQLi
 G:\Programming\GitHub Repo\Workout-Tracker-SQLite\obj\Debug\Workout-Tracker-SQLite.csproj.GenerateResource.cache
 G:\Programming\GitHub Repo\Workout-Tracker-SQLite\obj\Debug\Workout-Tracker-SQLite.csproj.CoreCompileInputs.cache
 G:\Programming\GitHub Repo\Workout-Tracker-SQLite\obj\Debug\Workout-Tracker-SQLite.csproj.CopyComplete
-G:\Programming\GitHub Repo\Workout-Tracker-SQLite\obj\Debug\Workout-Tracker-SQLite.exe
-G:\Programming\GitHub Repo\Workout-Tracker-SQLite\obj\Debug\Workout-Tracker-SQLite.pdb
 G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Debug\Workout_Tracker_SQLite_DB.db
 G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Debug\Microsoft.Data.Sqlite.dll
 G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Debug\SQLitePCLRaw.core.dll
@@ -84,3 +75,15 @@ C:\GitHub\Workout-Tracker-SQLite\obj\Debug\Workout Tracker.application
 C:\GitHub\Workout-Tracker-SQLite\obj\Debug\Workout-Tracker-SQLite.csproj.CopyComplete
 C:\GitHub\Workout-Tracker-SQLite\obj\Debug\Workout Tracker.exe
 C:\GitHub\Workout-Tracker-SQLite\obj\Debug\Workout Tracker.pdb
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Debug\Workout Tracker.exe.config
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Debug\Workout Tracker.exe.manifest
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Debug\Workout Tracker.application
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Debug\Workout Tracker.exe
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Debug\Workout Tracker.pdb
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\obj\Debug\Workout Tracker.TrustInfo.xml
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\obj\Debug\Workout Tracker.exe.manifest
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\obj\Debug\Workout Tracker.application
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\obj\Debug\Workout Tracker.exe
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\obj\Debug\Workout Tracker.pdb
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Debug\x64\SQLite.Interop.dll
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Debug\x86\SQLite.Interop.dll

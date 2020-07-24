@@ -1,7 +1,4 @@
 G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Release\Workout_Tracker_SQLite_DB.db
-G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Release\Workout-Tracker-SQLite.exe.config
-G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Release\Workout-Tracker-SQLite.exe
-G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Release\Workout-Tracker-SQLite.pdb
 G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Release\Dapper.dll
 G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Release\Microsoft.Data.Sqlite.dll
 G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Release\SQLitePCLRaw.core.dll
@@ -18,8 +15,6 @@ G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Release\Dapper.xml
 G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Release\Microsoft.Data.Sqlite.xml
 G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Release\System.Buffers.xml
 G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Release\System.Configuration.ConfigurationManager.xml
-G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Release\System.Data.SQLite.xml
-G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Release\System.Data.SQLite.dll.config
 G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Release\System.Memory.xml
 G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Release\System.Numerics.Vectors.xml
 G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
@@ -36,8 +31,6 @@ G:\Programming\GitHub Repo\Workout-Tracker-SQLite\obj\Release\Workout_Tracker_SQ
 G:\Programming\GitHub Repo\Workout-Tracker-SQLite\obj\Release\Workout-Tracker-SQLite.csproj.GenerateResource.cache
 G:\Programming\GitHub Repo\Workout-Tracker-SQLite\obj\Release\Workout-Tracker-SQLite.csproj.CoreCompileInputs.cache
 G:\Programming\GitHub Repo\Workout-Tracker-SQLite\obj\Release\Workout-Tracker-SQLite.csproj.CopyComplete
-G:\Programming\GitHub Repo\Workout-Tracker-SQLite\obj\Release\Workout-Tracker-SQLite.exe
-G:\Programming\GitHub Repo\Workout-Tracker-SQLite\obj\Release\Workout-Tracker-SQLite.pdb
 C:\GitHub\Workout-Tracker-SQLite\bin\Release\Workout_Tracker_SQLite_DB.db
 C:\GitHub\Workout-Tracker-SQLite\bin\Release\Dapper.dll
 C:\GitHub\Workout-Tracker-SQLite\bin\Release\Microsoft.Data.Sqlite.dll
@@ -86,3 +79,18 @@ C:\GitHub\Workout-Tracker-SQLite\obj\Release\Workout Tracker.exe.manifest
 C:\GitHub\Workout-Tracker-SQLite\obj\Release\Workout Tracker.application
 C:\GitHub\Workout-Tracker-SQLite\obj\Release\Workout Tracker.exe
 C:\GitHub\Workout-Tracker-SQLite\obj\Release\Workout Tracker.pdb
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Release\Workout Tracker.exe.config
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Release\Workout Tracker.exe.manifest
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Release\Workout Tracker.application
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Release\Workout Tracker.exe
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Release\Workout Tracker.pdb
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Release\Workout Tracker.exe.CodeAnalysisLog.xml
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Release\Workout Tracker.exe.lastcodeanalysissucceeded
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\obj\Release\Workout-Tracker-SQLite.csprojAssemblyReference.cache
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\obj\Release\Workout Tracker.TrustInfo.xml
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\obj\Release\Workout Tracker.exe.manifest
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\obj\Release\Workout Tracker.application
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\obj\Release\Workout Tracker.exe
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\obj\Release\Workout Tracker.pdb
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Release\x64\SQLite.Interop.dll
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Release\x86\SQLite.Interop.dll

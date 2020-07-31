@@ -12,6 +12,7 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Workout_Tracker_SQLite.Forms;
 
 namespace Workout_Tracker_SQLite
 {
@@ -700,6 +701,18 @@ namespace Workout_Tracker_SQLite
             df.Show();
         }
 
+        private void btn_WeightTrack_Click(object sender, EventArgs e)
+        {
+            WeightTrackForm wtf = new WeightTrackForm();
+            wtf.Show();
+        }
+
+        private void btn_Target_Click(object sender, EventArgs e)
+        {
+            Weight_Target_Form t = new Weight_Target_Form();
+            t.Show();
+        }
+
         #endregion
 
         #region Copy Data
@@ -840,8 +853,9 @@ namespace Workout_Tracker_SQLite
                 finally { con.Close(); }
             }
         }
+
         #endregion
 
-        
+       
     }
 }

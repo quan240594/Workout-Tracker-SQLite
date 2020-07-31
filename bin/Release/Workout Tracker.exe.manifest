@@ -187,14 +187,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Workout Tracker.exe" size="1210816">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Workout Tracker.exe" size="1273792">
       <assemblyIdentity name="Workout Tracker" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>U6OOjUO5AY68ADqvoPj3TVsr5hsNToz9vz7ED1VIR40=</dsig:DigestValue>
+        <dsig:DigestValue>80f04P82xsEsEVvGTVShj+A6VYqh3HfP6h0eA+xKzcA=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -216,13 +216,13 @@
       <dsig:DigestValue>q+Qqb3ajFggLDlYBaa5gOPC8Qpkwabb/g7CSBMNe8fg=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Workout_Tracker_SQLite_DB.db" size="49152">
+  <file name="Workout_Tracker_SQLite_DB.db" size="73728">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>RdGdNEJkolifNcFKUZyj/bZnLMhhaktHcne2sLoVscI=</dsig:DigestValue>
+      <dsig:DigestValue>mmTHtw+c679qNdLcXs4U9PYTJ/6ocqXxbUagLgx5S7M=</dsig:DigestValue>
     </hash>
   </file>
   <file name="x64\SQLite.Interop.dll" size="1638912">

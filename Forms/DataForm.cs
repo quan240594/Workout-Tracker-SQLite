@@ -20,8 +20,6 @@ namespace Workout_Tracker_SQLite
 
         int pID = 0;
         int eID = 0;
-        string sd = "";
-        string ed = "";
         string gridQuery = "Select [ID], [Date], [Exercise_Name], [Full_Name], [Total_Sets], [Total_Reps], [Average_Reps], [Average_Weight], " +
                 "[S1_Reps], [S2_Reps], [S3_Reps], [S4_Reps], [S5_Reps], [S6_Reps], [S7_Reps], [S8_Reps], " +
                 "[S1_Weight], [S2_Weight], [S3_Weight], [S4_Weight], [S5_weight], [S6_Weight], [S7_Weight], [S8_Weight] " +

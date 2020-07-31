@@ -94,3 +94,4 @@ G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Release\x64\SQLite.Interop
 G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Release\x86\SQLite.Interop.dll
 C:\GitHub\Workout-Tracker-SQLite\bin\Release\x64\SQLite.Interop.dll
 C:\GitHub\Workout-Tracker-SQLite\bin\Release\x86\SQLite.Interop.dll
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\obj\Release\Workout_Tracker_SQLite.Forms.WeightTrackForm.resources

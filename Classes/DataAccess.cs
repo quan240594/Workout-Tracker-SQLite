@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Workout_Tracker_SQLite.Data_Models;
 
 namespace Workout_Tracker_SQLite
 {
@@ -79,6 +80,33 @@ namespace Workout_Tracker_SQLite
                 {
                     cn.Execute("INSERT INTO [Exercise Details] (Exercise_Name, Active, Muscle_Group, Weight_Required, Weight_Type, Day_1, Day_2) VALUES" +
                         "(@Exercise_Name, @Active, @Muscle_Group, @Weight_Required, @Weight_Type, @Day_1, @Day_2)", workout);
+                    MessageBox.Show("Data saved successfully !", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception E) { MessageBox.Show(E.Message); }
+            }
+        }
+
+        public static void SaveWeightProgress (Weight_Model daily_weight)
+        {
+            using (IDbConnection cn = new SQLiteConnection(DataAccess.ConString("Default")))
+            {
+                try
+                {
+                    cn.Execute("INSERT INTO [Weight_Tracking] (Date, Person_ID, Weight, Target_Weight, Weight_To_Target) VALUES" +
+                        "(@Date, @Person_ID, @Weight, @Target_Weight, @Weight_To_Target)", daily_weight);
+                    MessageBox.Show("Data saved successfully !", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception E) { MessageBox.Show(E.Message); }
+            }
+        }
+        public static void SaveWeightTarget(Weight_Target_Model target)
+        {
+            using (IDbConnection cn = new SQLiteConnection(DataAccess.ConString("Default")))
+            {
+                try
+                {
+                    cn.Execute("INSERT INTO [Yearly_Weight_Target] (Person_ID, Year, Target) VALUES" +
+                        "(@Person_ID, @Year, @Target)", target);
                     MessageBox.Show("Data saved successfully !", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 catch (Exception E) { MessageBox.Show(E.Message); }

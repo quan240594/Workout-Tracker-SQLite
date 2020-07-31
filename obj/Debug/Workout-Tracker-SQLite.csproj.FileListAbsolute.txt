@@ -87,3 +87,6 @@ G:\Programming\GitHub Repo\Workout-Tracker-SQLite\obj\Debug\Workout Tracker.exe
 G:\Programming\GitHub Repo\Workout-Tracker-SQLite\obj\Debug\Workout Tracker.pdb
 G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Debug\x64\SQLite.Interop.dll
 G:\Programming\GitHub Repo\Workout-Tracker-SQLite\bin\Debug\x86\SQLite.Interop.dll
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\obj\Debug\Workout-Tracker-SQLite.csprojAssemblyReference.cache
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\obj\Debug\Workout_Tracker_SQLite.Forms.WeightTrackForm.resources
+G:\Programming\GitHub Repo\Workout-Tracker-SQLite\obj\Debug\Workout_Tracker_SQLite.Forms.Weight_Target_Form.resources

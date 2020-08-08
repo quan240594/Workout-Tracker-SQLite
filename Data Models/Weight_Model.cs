@@ -11,8 +11,7 @@ namespace Workout_Tracker_SQLite.Data_Models
         public int ID { get; set; }
         public DateTime Date { get; set; }
         public int Person_ID { get; set; }
-        public double Daily_Weight { get; set; }
-        public double Target_Weight { get; set; }
+        public double Weight { get; set; }
         public double Weight_To_Target { get; set; }
     }
 }

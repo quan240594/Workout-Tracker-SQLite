@@ -9,6 +9,7 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 using Workout_Tracker_SQLite.Data_Models;
 
 namespace Workout_Tracker_SQLite.Forms
@@ -34,12 +35,12 @@ namespace Workout_Tracker_SQLite.Forms
         {
             Weight_Model w = new Weight_Model();
             w.Date = dateTimePicker1.Value.Date;
-            w.Daily_Weight = Convert.ToDouble(txt_Weight.Text);
+            w.Weight = Convert.ToDouble(txt_Weight.Text);
             w.Person_ID = Int32.Parse(cb_Person.SelectedValue.ToString());
-            w.Target_Weight = Convert.ToDouble(cb_Target.Text);
             w.Weight_To_Target = Convert.ToDouble(txt_Distance.Text);
 
             DataAccess.SaveWeightProgress(w);
+            reset();
         }
 
         private void reset()
@@ -50,6 +51,7 @@ namespace Workout_Tracker_SQLite.Forms
             cb_Target.Enabled  = false;
             fillGrid();
             fillCB();
+            loadChart();
         }
 
         private void WeightTrackForm_Load(object sender, EventArgs e)
@@ -93,9 +95,10 @@ namespace Workout_Tracker_SQLite.Forms
 
         private void cb_Person_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            if (dateTimePicker1.Enabled == true)
-            { txt_Weight.ReadOnly = false; }
             pid = cb_Person.SelectedValue.ToString();
+
+            if (dateTimePicker1.Enabled == true)
+            { txt_Weight.ReadOnly = false; }            
             try
             {
                 cYear = dateTimePicker1.Value.Year.ToString();
@@ -104,6 +107,8 @@ namespace Workout_Tracker_SQLite.Forms
             {
                 cYear = DateTime.Now.Year.ToString();
             }
+
+            loadChart();
 
             SQLiteCommand cmd = new SQLiteCommand("SELECT [TARGET] FROM [Yearly_Weight_Target] where [Person_ID] = " + pid + " AND [Year] = " + cYear + " ORDER BY [YEAR] DESC LIMIT 1", con);
             DataTable dt = new DataTable();
@@ -139,6 +144,44 @@ namespace Workout_Tracker_SQLite.Forms
             }
             catch (Exception)
             { txt_Weight.Text = "0"; }
+        }
+
+        private void btn_Refresh_Click(object sender, EventArgs e)
+        {
+            reset();
+        }
+
+        private void loadChart()
+        {
+            pid = cb_Person.SelectedValue.ToString();
+            chart1.Titles.Clear();
+            chart1.Series.Clear();
+
+            SQLiteCommand cmd = new SQLiteCommand("SELECT Date, Full_Name, Weight, Target FROM Person p INNER JOIN Weight_Tracking wt INNER JOIN Yearly_Weight_Target ywt " +
+                "on p.Person_ID = wt.Person_ID AND p.Person_ID = ywt.Person_ID WHERE p.Person_ID = " + pid + " ORDER BY Date ASC", con);
+            con.Open();
+            SQLiteDataReader dr = cmd.ExecuteReader();
+            DataTable dt = new DataTable();
+
+            dt.Load(dr);
+
+            chart1.DataSource = dt;
+            chart1.DataBind();
+            con.Close();
+
+            chart1.Titles.Add("Weight Progress");
+            
+
+            chart1.Series.Add("Weight");
+            chart1.Series["Weight"].XValueMember = "Date";
+            chart1.Series["Weight"].YValueMembers = "Weight";
+            chart1.Series["Weight"].ChartType = SeriesChartType.Spline;
+            chart1.Series["Weight"].BorderWidth = 5;
+            chart1.Series["Weight"].IsValueShownAsLabel = true;
+            chart1.Series["Weight"].LabelBorderWidth = 3;
+            chart1.Series["Weight"].MarkerStyle = MarkerStyle.Cross;
+            chart1.Series["Weight"].MarkerSize = 15;
+            chart1.Series["Weight"].SmartLabelStyle.Enabled = true;
         }
     }
 }

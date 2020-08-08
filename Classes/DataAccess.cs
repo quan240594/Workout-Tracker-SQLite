@@ -90,13 +90,13 @@ namespace Workout_Tracker_SQLite
         {
             using (IDbConnection cn = new SQLiteConnection(DataAccess.ConString("Default")))
             {
-                try
-                {
-                    cn.Execute("INSERT INTO [Weight_Tracking] (Date, Person_ID, Weight, Target_Weight, Weight_To_Target) VALUES" +
-                        "(@Date, @Person_ID, @Weight, @Target_Weight, @Weight_To_Target)", daily_weight);
+                //try
+                //{
+                    cn.Execute("INSERT INTO [Weight_Tracking] (Date, Person_ID, Weight, Weight_To_Target) VALUES " +
+                        "(@Date, @Person_ID, @Weight, @Weight_To_Target)", daily_weight);
                     MessageBox.Show("Data saved successfully !", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                catch (Exception E) { MessageBox.Show(E.Message); }
+                //}
+                //catch (Exception E) { MessageBox.Show(E.Message); }
             }
         }
         public static void SaveWeightTarget(Weight_Target_Model target)

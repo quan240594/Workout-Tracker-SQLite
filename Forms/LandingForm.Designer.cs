@@ -43,6 +43,8 @@
             this.btn_ViewData = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.btn_Refresh = new System.Windows.Forms.ToolStripButton();
+            this.btn_WeightTrack = new System.Windows.Forms.ToolStripButton();
+            this.btn_Target = new System.Windows.Forms.ToolStripButton();
             this.label1 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.cb_Person_Name = new System.Windows.Forms.ComboBox();
@@ -109,8 +111,6 @@
             this.txt_Total_Days = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btn_WeightTrack = new System.Windows.Forms.ToolStripButton();
-            this.btn_Target = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.groupBox_Reps.SuspendLayout();
             this.groupBox_Weight.SuspendLayout();
@@ -134,9 +134,9 @@
             this.toolStripSeparator7,
             this.btn_ViewData,
             this.toolStripSeparator1,
-            this.btn_Refresh,
             this.btn_WeightTrack,
-            this.btn_Target});
+            this.btn_Target,
+            this.btn_Refresh});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(1049, 32);
@@ -242,6 +242,26 @@
             this.btn_Refresh.Size = new System.Drawing.Size(29, 29);
             this.btn_Refresh.Text = "Refresh";
             this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
+            // 
+            // btn_WeightTrack
+            // 
+            this.btn_WeightTrack.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btn_WeightTrack.Image = ((System.Drawing.Image)(resources.GetObject("btn_WeightTrack.Image")));
+            this.btn_WeightTrack.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_WeightTrack.Name = "btn_WeightTrack";
+            this.btn_WeightTrack.Size = new System.Drawing.Size(29, 29);
+            this.btn_WeightTrack.Text = "Weight Tracking";
+            this.btn_WeightTrack.Click += new System.EventHandler(this.btn_WeightTrack_Click);
+            // 
+            // btn_Target
+            // 
+            this.btn_Target.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btn_Target.Image = ((System.Drawing.Image)(resources.GetObject("btn_Target.Image")));
+            this.btn_Target.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_Target.Name = "btn_Target";
+            this.btn_Target.Size = new System.Drawing.Size(29, 29);
+            this.btn_Target.Text = "Target";
+            this.btn_Target.Click += new System.EventHandler(this.btn_Target_Click);
             // 
             // label1
             // 
@@ -976,26 +996,6 @@
             this.groupBox1.TabIndex = 28;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Personal Details";
-            // 
-            // btn_WeightTrack
-            // 
-            this.btn_WeightTrack.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btn_WeightTrack.Image = ((System.Drawing.Image)(resources.GetObject("btn_WeightTrack.Image")));
-            this.btn_WeightTrack.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btn_WeightTrack.Name = "btn_WeightTrack";
-            this.btn_WeightTrack.Size = new System.Drawing.Size(29, 29);
-            this.btn_WeightTrack.Text = "Weight Tracking";
-            this.btn_WeightTrack.Click += new System.EventHandler(this.btn_WeightTrack_Click);
-            // 
-            // btn_Target
-            // 
-            this.btn_Target.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btn_Target.Image = ((System.Drawing.Image)(resources.GetObject("btn_Target.Image")));
-            this.btn_Target.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btn_Target.Name = "btn_Target";
-            this.btn_Target.Size = new System.Drawing.Size(29, 29);
-            this.btn_Target.Text = "Target";
-            this.btn_Target.Click += new System.EventHandler(this.btn_Target_Click);
             // 
             // LandingForm
             // 

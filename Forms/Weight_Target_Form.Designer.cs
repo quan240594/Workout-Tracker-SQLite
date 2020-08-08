@@ -32,15 +32,15 @@
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.btn_Save = new System.Windows.Forms.ToolStripButton();
             this.btn_Delete = new System.Windows.Forms.ToolStripButton();
+            this.btn_Refresh = new System.Windows.Forms.ToolStripButton();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.txt_Target = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.cb_Person = new System.Windows.Forms.ComboBox();
             this.txt_Year = new System.Windows.Forms.TextBox();
-            this.txt_Target = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btn_Refresh = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -79,6 +79,16 @@
             this.btn_Delete.Text = "Delete";
             this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
             // 
+            // btn_Refresh
+            // 
+            this.btn_Refresh.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.btn_Refresh.Image = ((System.Drawing.Image)(resources.GetObject("btn_Refresh.Image")));
+            this.btn_Refresh.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btn_Refresh.Name = "btn_Refresh";
+            this.btn_Refresh.Size = new System.Drawing.Size(23, 22);
+            this.btn_Refresh.Text = "Refresh";
+            this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
+            // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.AutoSize = true;
@@ -101,8 +111,16 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(604, 34);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(604, 32);
             this.tableLayoutPanel1.TabIndex = 1;
+            // 
+            // txt_Target
+            // 
+            this.txt_Target.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txt_Target.Location = new System.Drawing.Point(472, 3);
+            this.txt_Target.Name = "txt_Target";
+            this.txt_Target.Size = new System.Drawing.Size(129, 26);
+            this.txt_Target.TabIndex = 5;
             // 
             // label1
             // 
@@ -110,7 +128,7 @@
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 34);
+            this.label1.Size = new System.Drawing.Size(61, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "Person";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -121,7 +139,7 @@
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label2.Location = new System.Drawing.Point(204, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 34);
+            this.label2.Size = new System.Drawing.Size(61, 32);
             this.label2.TabIndex = 1;
             this.label2.Text = "Year";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -132,7 +150,7 @@
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label3.Location = new System.Drawing.Point(405, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 34);
+            this.label3.Size = new System.Drawing.Size(61, 32);
             this.label3.TabIndex = 2;
             this.label3.Text = "Target";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -154,14 +172,6 @@
             this.txt_Year.Size = new System.Drawing.Size(128, 26);
             this.txt_Year.TabIndex = 4;
             // 
-            // txt_Target
-            // 
-            this.txt_Target.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txt_Target.Location = new System.Drawing.Point(472, 3);
-            this.txt_Target.Name = "txt_Target";
-            this.txt_Target.Size = new System.Drawing.Size(129, 26);
-            this.txt_Target.TabIndex = 5;
-            // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -171,16 +181,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(604, 217);
             this.dataGridView1.TabIndex = 2;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            // 
-            // btn_Refresh
-            // 
-            this.btn_Refresh.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.btn_Refresh.Image = ((System.Drawing.Image)(resources.GetObject("btn_Refresh.Image")));
-            this.btn_Refresh.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btn_Refresh.Name = "btn_Refresh";
-            this.btn_Refresh.Size = new System.Drawing.Size(23, 22);
-            this.btn_Refresh.Text = "Refresh";
-            this.btn_Refresh.Click += new System.EventHandler(this.btn_Refresh_Click);
             // 
             // Weight_Target_Form
             // 
